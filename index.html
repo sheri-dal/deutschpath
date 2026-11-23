@@ -2,17 +2,632 @@
 :root{font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif;color:#172342;background:#f3f6fc}*{box-sizing:border-box}body{margin:0}button,input,textarea,select{font:inherit}button{cursor:pointer}button:focus-visible,input:focus-visible,textarea:focus-visible{outline:3px solid #8ba8ff;outline-offset:2px}.layout{display:flex;min-height:100vh}.side{width:258px;background:#101c36;color:white;padding:27px 17px;position:sticky;top:0;height:100vh;overflow:auto;flex-shrink:0}.brand{font-size:23px;font-weight:850;letter-spacing:-.8px;margin:5px 9px 3px}.brand b{color:#8aa9ff}.tagline{font-size:12px;color:#b9c8e7;margin:0 9px 30px;line-height:1.6}.navtitle{font-size:11px;letter-spacing:1.6px;color:#90a8d6;margin:23px 12px 10px;font-weight:800}.nav{width:100%;display:flex;gap:12px;align-items:center;background:none;border:0;color:#dbe6ff;padding:12px 14px;text-align:left;border-radius:12px;margin:3px 0}.nav:hover,.nav.active{background:#2c4069;color:white}.nav .symbol{width:22px;text-align:center}.sidebar-note{font-size:12px;line-height:1.6;color:#a9bce0;padding:15px;margin-top:18px;border:1px solid #354767;border-radius:12px}.main{min-width:0;flex:1;max-width:1450px;margin:auto;padding:32px clamp(18px,4vw,60px) 70px}.top{display:flex;align-items:center;justify-content:space-between;gap:15px;margin-bottom:27px}.eyebrow{color:#5e7298;font-size:13px;font-weight:700}.chip{background:#e9efff;color:#2e55ae;border-radius:40px;padding:9px 13px;font-size:12px;font-weight:750}.hero{background:linear-gradient(120deg,#1a315e,#3e64d6);border-radius:24px;color:white;padding:35px 39px;display:flex;justify-content:space-between;align-items:center;gap:20px;box-shadow:0 14px 30px #203f9220}.hero h1{font-size:clamp(27px,3vw,40px);line-height:1.15;margin:10px 0 12px;max-width:650px}.hero p{max-width:590px;line-height:1.65;color:#dfe7ff}.hero-art{font-size:88px;white-space:nowrap}.btn{background:#345bd1;color:white;border:0;border-radius:11px;padding:11px 16px;font-weight:750}.btn:hover{filter:brightness(1.09)}.btn.light{background:white;color:#2545a0}.btn.secondary{background:#eaf0ff;color:#2b4b9c}.btn.ghost{background:transparent;border:1px solid #cfd8ec;color:#31466e}.btn:disabled{opacity:.45;cursor:default}.section{margin-top:34px}.section-head{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:17px}.section h2,.section-head h2{font-size:21px;margin:0}.subtle{color:#667999;line-height:1.6}.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}.card,.panel{background:white;border:1px solid #e1e8f3;border-radius:18px;padding:23px;box-shadow:0 5px 15px #253b6510}.card h3{margin:15px 0 7px;font-size:20px}.card p{font-size:14px;color:#647796;line-height:1.55;min-height:43px}.pill{display:inline-block;padding:7px 11px;border-radius:9px;background:#eaf0ff;color:#3057bb;font-size:12px;font-weight:800}.progress{height:8px;background:#e8edf6;border-radius:20px;overflow:hidden;margin:16px 0 9px}.progress span{display:block;height:100%;background:#426ce2;border-radius:20px}.flex{display:flex;align-items:center;justify-content:space-between;gap:10px}.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin-top:20px}.stat{background:white;border:1px solid #e1e8f3;border-radius:15px;padding:20px}.stat strong{font-size:29px;display:block}.stat small{color:#6c7e9a}.lessonlist{display:grid;gap:11px}.lessonrow{background:white;border:1px solid #e1e8f3;border-radius:14px;padding:16px;display:flex;align-items:center;gap:15px;justify-content:space-between}.lessonrow h3{margin:0 0 5px;font-size:16px}.lessonrow p{margin:0;font-size:13px;color:#6a7e9c}.num{background:#eaf0ff;color:#3154b3;padding:10px;border-radius:11px;font-weight:800;min-width:47px;text-align:center}.filters{display:flex;gap:8px;flex-wrap:wrap;margin:16px 0}.filter{border:1px solid #d5dfef;background:white;color:#3c5074;border-radius:25px;padding:9px 13px}.filter.active{background:#284eae;color:white}.search{width:100%;padding:13px 16px;border:1px solid #d7e1f0;border-radius:12px;background:white;margin:14px 0}.grid2{display:grid;grid-template-columns:1.2fr .8fr;gap:18px}.panel h3{margin:0 0 12px}.explain{background:#eef3ff;border-left:4px solid #4a6de0;border-radius:10px;padding:16px;line-height:1.8}.example{background:#f6f9ff;border:1px solid #e2eaf9;border-radius:12px;padding:17px;margin-top:12px}.example strong{display:block;font-size:19px;margin-bottom:7px}.example small{color:#657999}.wordgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.word{border:1px solid #e0e8f5;border-radius:11px;padding:12px;display:flex;justify-content:space-between;align-items:center;gap:7px}.word small{display:block;color:#637796;margin-top:4px}.speak{border:0;background:#eaf0ff;color:#355bc2;border-radius:9px;padding:8px 10px}.quizopts{display:grid;gap:10px;margin:15px 0}.option{background:white;border:1px solid #ccd9ec;border-radius:11px;padding:13px;text-align:left}.option.selected{border:2px solid #3e63d5;background:#f0f4ff}.feedback{padding:14px;border-radius:11px;margin-top:12px;line-height:1.6}.feedback.good{background:#e7f7ef;color:#176445}.feedback.bad{background:#fff0ee;color:#a33e32}.textinput{width:100%;border:1px solid #cfd9eb;border-radius:11px;padding:12px;margin:9px 0;min-height:110px;resize:vertical}.prompt{line-height:1.7;background:#f5f8ff;padding:15px;border-radius:11px}.reading{font-size:17px;line-height:1.85}.notice{background:#fff7e6;border:1px solid #f4dfac;border-radius:12px;padding:15px;line-height:1.6}.tiny{font-size:12px;color:#71819b}.tabbar{display:flex;gap:8px;flex-wrap:wrap;margin:18px 0}.tab{border:1px solid #d4dff0;background:white;color:#355073;border-radius:10px;padding:11px 14px;font-weight:700}.tab.active{background:#284eae;color:white}.empty{text-align:center;padding:36px;color:#6b7d9a}.mobilehead{display:none}.overlay{display:none}.stack{display:grid;gap:17px}.conversation{background:#f3f6fd;padding:15px;border-radius:14px;line-height:1.7}.footer{margin-top:45px;font-size:12px;color:#71829c;text-align:center}@media(max-width:1080px){.cards{grid-template-columns:repeat(2,minmax(0,1fr))}.stats{grid-template-columns:repeat(2,1fr)}.grid2{grid-template-columns:1fr}}@media(max-width:760px){.mobilehead{display:flex;background:#101c36;color:white;align-items:center;justify-content:space-between;padding:13px 18px;position:sticky;top:0;z-index:20}.mobilehead button{background:#2e416a;color:white;border:0;border-radius:9px;padding:8px 12px}.layout{display:block}.side{position:fixed;z-index:30;transform:translateX(-105%);transition:transform .2s;box-shadow:15px 0 30px #0002}.side.open{transform:translateX(0)}.overlay.open{display:block;position:fixed;inset:0;background:#07112a99;z-index:25}.main{padding:22px 15px 50px}.hero{padding:24px}.hero-art{display:none}.cards{grid-template-columns:1fr}.wordgrid{grid-template-columns:1fr}.top{align-items:flex-start}.stats{gap:9px}.stat{padding:14px}.stat strong{font-size:24px}.card{padding:20px}.lessonrow{align-items:flex-start}.lessonrow .btn{font-size:12px;padding:9px}.section{margin-top:26px}}</style></head><body><div class="mobilehead"><strong>🇩🇪 DeutschPath Academy</strong><button id="menuBtn" aria-label="Open menu">☰ Menu</button></div><div class="overlay" id="overlay"></div><div class="layout"><aside class="side" id="side"><div class="brand">DE Deutsch<b>Path</b></div><p class="tagline">Your German Learning Academy<br>German + Roman Urdu</p><div class="navtitle">LEARNING SPACE</div><div id="nav"></div><div class="navtitle">GERMAN LEVELS</div><div id="levelnav"></div><div class="sidebar-note">🔒 Your progress stays on this device. Export a backup to move it to another device. No paid services required.</div></aside><main class="main"><div id="app"></div><footer class="footer">DeutschPath Academy · Original learning materials · Free, offline-friendly after download · A1.1–B2 learning pathway</footer></main></div><script>
 const COURSE = {"levels":[{"id":"A1.1","name":"First Steps","desc":"Start speaking, reading and understanding basic German."},{"id":"A1.2","name":"Everyday German","desc":"Shopping, routines, travel and everyday situations."},{"id":"A2.1","name":"Building Confidence","desc":"Past events, reasons, comparisons and plans."},{"id":"A2.2","name":"Real-Life Communication","desc":"Polite requests, stories and more complex sentences."},{"id":"B1","name":"Independent German","desc":"Opinions, workplace communication and structured arguments."},{"id":"B2","name":"Advanced German","desc":"Academic language, debate and formal writing."}],"lessons":[{"id":"A11-1","level":"A1.1","number":1,"title":"Greetings & Introductions","grammar":"Personal pronouns","explanation":"Ich ka matlab main, du tum aur Sie aap (formal) hota hai. Formal mulaqat mein Sie use karo.","example":"Ich heiße Sara.","translation":"Mera naam Sara hai.","vocab":[{"de":"Hallo","ur":"Salam"},{"de":"Guten Morgen","ur":"Subah bakhair"},{"de":"Guten Tag","ur":"Din bakhair"},{"de":"Tschüss","ur":"Allah hafiz"},{"de":"bitte","ur":"meherbani"},{"de":"danke","ur":"shukriya"},{"de":"der Name","ur":"naam"},{"de":"die Sprache","ur":"zaban"}],"question":"Which means “Thank you”?","options":["Hallo","Danke","Bitte"],"answer":1},{"id":"A11-2","level":"A1.1","number":2,"title":"The Verb sein","grammar":"sein: bin, bist, ist","explanation":"Ich ke saath bin, du ke saath bist, er/sie/es ke saath ist aata hai.","example":"Ich bin Student.","translation":"Main student hoon.","vocab":[{"de":"ich bin","ur":"main hoon"},{"de":"du bist","ur":"tum ho"},{"de":"er ist","ur":"woh (mard) hai"},{"de":"sie ist","ur":"woh (aurat) hai"},{"de":"wir sind","ur":"hum hain"},{"de":"ihr seid","ur":"tum sab ho"},{"de":"Sie sind","ur":"aap hain"},{"de":"heute","ur":"aaj"}],"question":"Ich ___ müde.","options":["bist","bin","ist"],"answer":1},{"id":"A11-3","level":"A1.1","number":3,"title":"Numbers & Age","grammar":"Asking questions with wie","explanation":"Umar poochne ke liye Wie alt bist du? Kehte hain. Jawab mein Ich bin ... Jahre alt.","example":"Ich bin zwanzig Jahre alt.","translation":"Meri umar bees saal hai.","vocab":[{"de":"eins","ur":"aik"},{"de":"zwei","ur":"do"},{"de":"drei","ur":"teen"},{"de":"zehn","ur":"das"},{"de":"zwanzig","ur":"bees"},{"de":"hundert","ur":"sau"},{"de":"das Alter","ur":"umar"},{"de":"die Zahl","ur":"number"}],"question":"How do you say “two”?","options":["drei","zwei","zehn"],"answer":1},{"id":"A11-4","level":"A1.1","number":4,"title":"Countries & Languages","grammar":"kommen aus + country","explanation":"Kisi ke mulk ke baare mein poochho: Woher kommst du? Jawab: Ich komme aus Pakistan.","example":"Ich komme aus Pakistan.","translation":"Main Pakistan se hoon.","vocab":[{"de":"Deutschland","ur":"Germany"},{"de":"Pakistan","ur":"Pakistan"},{"de":"Indien","ur":"India"},{"de":"die Stadt","ur":"shehar"},{"de":"das Land","ur":"mulk"},{"de":"Deutsch","ur":"German"},{"de":"Englisch","ur":"English"},{"de":"woher","ur":"kahan se"}],"question":"Woher ___ du?","options":["kommt","kommst","kommen"],"answer":1},{"id":"A11-5","level":"A1.1","number":5,"title":"Family Members","grammar":"Possessives mein / meine","explanation":"Masculine aur neuter nouns ke saath mein, feminine aur plural ke saath meine use hota hai.","example":"Das ist meine Mutter.","translation":"Yeh meri walida hain.","vocab":[{"de":"die Mutter","ur":"walida"},{"de":"der Vater","ur":"walid"},{"de":"der Bruder","ur":"bhai"},{"de":"die Schwester","ur":"behen"},{"de":"die Eltern","ur":"walidain"},{"de":"das Kind","ur":"bacha"},{"de":"die Familie","ur":"khandan"},{"de":"der Sohn","ur":"beta"}],"question":"Das ist ___ Schwester.","options":["mein","meine","meinen"],"answer":1},{"id":"A11-6","level":"A1.1","number":6,"title":"Articles: der, die, das","grammar":"Noun gender","explanation":"German nouns ka gender hota hai: der masculine, die feminine, das neuter. Har noun ko article ke saath yaad karo.","example":"Das ist der Tisch.","translation":"Yeh mez hai.","vocab":[{"de":"der Tisch","ur":"mez"},{"de":"die Lampe","ur":"lamp"},{"de":"das Buch","ur":"kitab"},{"de":"der Stuhl","ur":"kursi"},{"de":"die Tür","ur":"darwaza"},{"de":"das Fenster","ur":"khirki"},{"de":"der Apfel","ur":"saib"},{"de":"die Tasche","ur":"bag"}],"question":"___ Buch ist neu.","options":["Der","Die","Das"],"answer":2},{"id":"A11-7","level":"A1.1","number":7,"title":"Everyday Objects","grammar":"ein / eine and kein / keine","explanation":"Indefinite article ein masculine/neuter ke liye aur eine feminine ke liye hota hai. Na-fi ke liye kein/keine.","example":"Das ist eine Tasche.","translation":"Yeh aik bag hai.","vocab":[{"de":"das Handy","ur":"mobile"},{"de":"der Schlüssel","ur":"chaabi"},{"de":"die Brille","ur":"chashma"},{"de":"der Computer","ur":"computer"},{"de":"die Uhr","ur":"ghari"},{"de":"das Foto","ur":"tasveer"},{"de":"das Heft","ur":"copy"},{"de":"der Kugelschreiber","ur":"pen"}],"question":"Das ist ___ Uhr.","options":["ein","eine","einen"],"answer":1},{"id":"A11-8","level":"A1.1","number":8,"title":"Daily Verbs","grammar":"Present tense -en verbs","explanation":"Aam verbs mein ich ke saath -e, du ke saath -st, er/sie ke saath -t lagta hai.","example":"Ich lerne jeden Tag Deutsch.","translation":"Main har roz German seekhta hoon.","vocab":[{"de":"lernen","ur":"seekhna"},{"de":"wohnen","ur":"rehna"},{"de":"arbeiten","ur":"kaam karna"},{"de":"spielen","ur":"khelna"},{"de":"fragen","ur":"poochhna"},{"de":"antworten","ur":"jawab dena"},{"de":"hören","ur":"sunna"},{"de":"schreiben","ur":"likhna"}],"question":"Du ___ Deutsch.","options":["lernt","lernst","lerne"],"answer":1},{"id":"A12-1","level":"A1.2","number":1,"title":"Daily Routine","grammar":"Separable verbs","explanation":"Aufstehen jese verbs mein prefix jumlay ke end par chala jata hai: ich stehe ... auf.","example":"Ich stehe um sieben Uhr auf.","translation":"Main saat baje uthta hoon.","vocab":[{"de":"aufstehen","ur":"uthna"},{"de":"frühstücken","ur":"nashta karna"},{"de":"duschen","ur":"nahana"},{"de":"anfangen","ur":"shuru karna"},{"de":"einkaufen","ur":"shopping karna"},{"de":"anrufen","ur":"call karna"},{"de":"schlafen","ur":"sona"},{"de":"aufwachen","ur":"jaagna"}],"question":"Ich stehe früh ___.","options":["ein","auf","an"],"answer":1},{"id":"A12-2","level":"A1.2","number":2,"title":"Time & Appointments","grammar":"um / am / im","explanation":"Clock time ke liye um, weekdays aur dates ke liye am, months aur seasons ke liye im.","example":"Wir treffen uns am Montag um neun Uhr.","translation":"Hum peer ko nau baje milte hain.","vocab":[{"de":"Montag","ur":"peer"},{"de":"Dienstag","ur":"mangal"},{"de":"Mittwoch","ur":"budh"},{"de":"Donnerstag","ur":"jumeraat"},{"de":"Freitag","ur":"jumma"},{"de":"Samstag","ur":"hafta"},{"de":"Sonntag","ur":"itwaar"},{"de":"die Uhrzeit","ur":"waqt"}],"question":"___ Montag habe ich Zeit.","options":["Im","Am","Um"],"answer":1},{"id":"A12-3","level":"A1.2","number":3,"title":"Shopping & Prices","grammar":"Accusative objects","explanation":"Direct object masculine ho to der -> den aur ein -> einen ho jata hai. Feminine/neuter articles waise rehte hain.","example":"Ich kaufe einen Apfel.","translation":"Main aik saib khareedta hoon.","vocab":[{"de":"kaufen","ur":"khareedna"},{"de":"kosten","ur":"qeemat hona"},{"de":"teuer","ur":"mehnga"},{"de":"billig","ur":"sasta"},{"de":"das Geld","ur":"paisa"},{"de":"der Preis","ur":"qeemat"},{"de":"der Laden","ur":"dukaan"},{"de":"bezahlen","ur":"ada karna"}],"question":"Ich kaufe ___ Stuhl.","options":["ein","einen","eine"],"answer":1},{"id":"A12-4","level":"A1.2","number":4,"title":"Food & Drinks","grammar":"möchten for polite requests","explanation":"Kisi cheez ki tameez se darkhwast ke liye ich möchte use karo.","example":"Ich möchte einen Tee, bitte.","translation":"Mujhe aik chai chahiye, please.","vocab":[{"de":"das Wasser","ur":"pani"},{"de":"der Tee","ur":"chai"},{"de":"der Kaffee","ur":"coffee"},{"de":"das Brot","ur":"roti"},{"de":"die Milch","ur":"doodh"},{"de":"das Ei","ur":"anda"},{"de":"der Reis","ur":"chawal"},{"de":"der Käse","ur":"cheese"}],"question":"Ich ___ Wasser.","options":["möchtest","möchte","möchten"],"answer":1},{"id":"A12-5","level":"A1.2","number":5,"title":"At Home","grammar":"Dative with locations","explanation":"Wo? (kahan?) ka jawab aksar dative mein hota hai: in dem -> im, an dem -> am.","example":"Ich bin in der Küche.","translation":"Main kitchen mein hoon.","vocab":[{"de":"die Küche","ur":"kitchen"},{"de":"das Bad","ur":"bathroom"},{"de":"das Zimmer","ur":"kamra"},{"de":"das Bett","ur":"bistar"},{"de":"der Schrank","ur":"almari"},{"de":"der Garten","ur":"bagh"},{"de":"die Wohnung","ur":"flat"},{"de":"das Haus","ur":"ghar"}],"question":"Ich bin ___ Küche.","options":["in die","in der","in den"],"answer":1},{"id":"A12-6","level":"A1.2","number":6,"title":"Travel & Directions","grammar":"Imperative polite Sie","explanation":"Formal directions ke liye verb + Sie: Gehen Sie geradeaus.","example":"Gehen Sie bitte nach links.","translation":"Meherbani karke baen taraf jaiye.","vocab":[{"de":"links","ur":"baen"},{"de":"rechts","ur":"daen"},{"de":"geradeaus","ur":"seedha"},{"de":"der Bahnhof","ur":"station"},{"de":"die Straße","ur":"sarak"},{"de":"der Bus","ur":"bus"},{"de":"der Zug","ur":"train"},{"de":"die Haltestelle","ur":"stop"}],"question":"___ Sie geradeaus.","options":["Geht","Gehen","Gehst"],"answer":1},{"id":"A12-7","level":"A1.2","number":7,"title":"Health & Body","grammar":"Modal verb können","explanation":"Können ka matlab sakna hai. Modal verb conjugate hota hai aur doosra verb end par infinitive rehta hai.","example":"Ich kann heute nicht kommen.","translation":"Main aaj nahi aa sakta.","vocab":[{"de":"der Kopf","ur":"sar"},{"de":"die Hand","ur":"haath"},{"de":"der Fuß","ur":"paon"},{"de":"krank","ur":"bemar"},{"de":"gesund","ur":"sehatmand"},{"de":"der Arzt","ur":"doctor"},{"de":"der Schmerz","ur":"dard"},{"de":"helfen","ur":"madad karna"}],"question":"Ich ___ schwimmen.","options":["kannst","kann","könnt"],"answer":1},{"id":"A12-8","level":"A1.2","number":8,"title":"Past: First Stories","grammar":"Perfekt with haben","explanation":"Rozmarra guzishta waqiat ke liye haben + Partizip II istemal hota hai.","example":"Ich habe Deutsch gelernt.","translation":"Maine German seekhi.","vocab":[{"de":"gestern","ur":"kal (guzishta)"},{"de":"letzte Woche","ur":"pichla hafta"},{"de":"gemacht","ur":"kiya"},{"de":"gekauft","ur":"khareeda"},{"de":"gelernt","ur":"seekha"},{"de":"gespielt","ur":"khela"},{"de":"gekocht","ur":"pakaya"},{"de":"gearbeitet","ur":"kaam kiya"}],"question":"Ich ___ gekocht.","options":["bin","habe","hat"],"answer":1},{"id":"A21-1","level":"A2.1","number":1,"title":"Talking About the Past","grammar":"Perfekt with sein","explanation":"Movement aur state-change verbs aksar sein ke saath Perfekt banate hain.","example":"Ich bin nach Berlin gefahren.","translation":"Main Berlin gaya tha.","vocab":[{"de":"gefahren","ur":"safar kiya"},{"de":"gegangen","ur":"gaya"},{"de":"gekommen","ur":"aaya"},{"de":"geblieben","ur":"ruka"},{"de":"aufgestanden","ur":"utha"},{"de":"angekommen","ur":"pohncha"},{"de":"gestern Abend","ur":"kal shaam"},{"de":"die Reise","ur":"safar"}],"question":"Ich ___ nach Hause gegangen.","options":["habe","bin","hat"],"answer":1},{"id":"A21-2","level":"A2.1","number":2,"title":"Because & Reasons","grammar":"weil subordinate clauses","explanation":"Weil ke baad conjugated verb subordinate clause ke bilkul end par jata hai.","example":"Ich lerne Deutsch, weil ich in Deutschland wohne.","translation":"Main German seekhta hoon kyunke main Germany mein rehta hoon.","vocab":[{"de":"weil","ur":"kyunke"},{"de":"deshalb","ur":"is liye"},{"de":"der Grund","ur":"wajah"},{"de":"wichtig","ur":"zaroori"},{"de":"einfach","ur":"asaan"},{"de":"schwierig","ur":"mushkil"},{"de":"üben","ur":"practice karna"},{"de":"verstehen","ur":"samajhna"}],"question":"Ich bleibe zu Hause, weil ich krank ___.","options":["bin","ist","bist"],"answer":0},{"id":"A21-3","level":"A2.1","number":3,"title":"Comparing Things","grammar":"Comparative and superlative","explanation":"Adjective mein aksar -er se comparison aur am ...-sten se superlative banta hai.","example":"Berlin ist größer als Bonn.","translation":"Berlin Bonn se bara hai.","vocab":[{"de":"groß","ur":"bara"},{"de":"klein","ur":"chhota"},{"de":"schnell","ur":"tez"},{"de":"langsam","ur":"aahista"},{"de":"besser","ur":"behtar"},{"de":"teurer","ur":"zyada mehnga"},{"de":"günstiger","ur":"sasta"},{"de":"am besten","ur":"sab se behtar"}],"question":"Heute ist es ___ als gestern.","options":["warm","wärmer","am wärmsten"],"answer":1},{"id":"A21-4","level":"A2.1","number":4,"title":"Clothes & Shopping","grammar":"Adjective endings basics","explanation":"Article aur case ke mutabiq adjective ending badalti hai: ein rotes Kleid, der rote Mantel.","example":"Ich suche eine schwarze Jacke.","translation":"Main aik kali jacket dhoond raha hoon.","vocab":[{"de":"die Jacke","ur":"jacket"},{"de":"die Hose","ur":"patloon"},{"de":"das Kleid","ur":"dress"},{"de":"der Mantel","ur":"coat"},{"de":"die Schuhe","ur":"jootay"},{"de":"die Größe","ur":"size"},{"de":"anprobieren","ur":"try karna"},{"de":"passen","ur":"fit aana"}],"question":"Ich kaufe eine ___ Jacke.","options":["schwarz","schwarze","schwarzen"],"answer":1},{"id":"A21-5","level":"A2.1","number":5,"title":"Work & Career","grammar":"Modal verbs müssen / dürfen","explanation":"Müssen zaroorat, dürfen ijazat dikhata hai. Main verb end par infinitive aata hai.","example":"Ich muss morgen arbeiten.","translation":"Mujhe kal kaam karna hai.","vocab":[{"de":"der Beruf","ur":"pesha"},{"de":"der Chef","ur":"boss"},{"de":"die Kollegin","ur":"female colleague"},{"de":"die Bewerbung","ur":"application"},{"de":"das Büro","ur":"office"},{"de":"der Termin","ur":"appointment"},{"de":"die Pause","ur":"break"},{"de":"das Gehalt","ur":"salary"}],"question":"Du ___ hier nicht rauchen.","options":["darfst","musst","kann"],"answer":0},{"id":"A21-6","level":"A2.1","number":6,"title":"Making Plans","grammar":"Future with werden","explanation":"Future ke liye werden + infinitive use hota hai. Aksar present tense bhi future ke liye kaafi hai.","example":"Ich werde morgen lernen.","translation":"Main kal parhoonga.","vocab":[{"de":"morgen","ur":"kal (aane wala)"},{"de":"nächste Woche","ur":"agla hafta"},{"de":"planen","ur":"plan banana"},{"de":"besuchen","ur":"milne jana"},{"de":"reservieren","ur":"book karna"},{"de":"die Einladung","ur":"dawat"},{"de":"das Treffen","ur":"mulaqat"},{"de":"die Freizeit","ur":"farigh waqt"}],"question":"Wir ___ morgen reisen.","options":["wird","werden","werdet"],"answer":1},{"id":"A21-7","level":"A2.1","number":7,"title":"Giving Directions","grammar":"Two-way prepositions","explanation":"Wo? par dative aur Wohin? par accusative aata hai: in der Schule vs in die Schule.","example":"Ich gehe in die Schule.","translation":"Main school ja raha hoon.","vocab":[{"de":"die Schule","ur":"school"},{"de":"die Bank","ur":"bank"},{"de":"die Apotheke","ur":"pharmacy"},{"de":"der Markt","ur":"market"},{"de":"die Brücke","ur":"pul"},{"de":"die Kreuzung","ur":"chowk"},{"de":"über","ur":"upar/se paar"},{"de":"zwischen","ur":"darmiyan"}],"question":"Ich gehe ___ Park.","options":["im","in den","in dem"],"answer":1},{"id":"A21-8","level":"A2.1","number":8,"title":"At the Doctor","grammar":"Reflexive verbs","explanation":"Sich fühlen aur sich ausruhen jese verbs mein reflexive pronoun aata hai: ich fühle mich.","example":"Ich fühle mich heute besser.","translation":"Main aaj behtar mehsoos kar raha hoon.","vocab":[{"de":"sich fühlen","ur":"mehsoos karna"},{"de":"sich ausruhen","ur":"araam karna"},{"de":"das Fieber","ur":"bukhar"},{"de":"der Husten","ur":"khansi"},{"de":"die Tablette","ur":"goli"},{"de":"die Untersuchung","ur":"checkup"},{"de":"die Praxis","ur":"clinic"},{"de":"der Notfall","ur":"emergency"}],"question":"Ich fühle ___ gut.","options":["dich","mich","sich"],"answer":1},{"id":"A22-1","level":"A2.2","number":1,"title":"Polite Requests","grammar":"Konjunktiv II: würde","explanation":"Würde + infinitive se polite requests aur hypothetical baatein ki jati hain.","example":"Würden Sie mir bitte helfen?","translation":"Kya aap meri madad karenge?","vocab":[{"de":"höflich","ur":"tameez se"},{"de":"die Bitte","ur":"darkhwast"},{"de":"der Wunsch","ur":"khwahish"},{"de":"vielleicht","ur":"shayad"},{"de":"gerne","ur":"khushi se"},{"de":"leider","ur":"afsos"},{"de":"die Hilfe","ur":"madad"},{"de":"die Frage","ur":"sawal"}],"question":"___ Sie das wiederholen?","options":["Würden","Wird","Wirst"],"answer":0},{"id":"A22-2","level":"A2.2","number":2,"title":"Describing Experiences","grammar":"als vs wenn","explanation":"Past mein aik martaba hone wale event ke liye als; repeated ya present/future condition ke liye wenn.","example":"Als ich klein war, spielte ich Fußball.","translation":"Jab main chhota tha, football khelta tha.","vocab":[{"de":"damals","ur":"us waqt"},{"de":"früher","ur":"pehle"},{"de":"oft","ur":"aksar"},{"de":"manchmal","ur":"kabhi kabhi"},{"de":"selten","ur":"kam"},{"de":"immer","ur":"hamesha"},{"de":"die Kindheit","ur":"bachpan"},{"de":"die Erinnerung","ur":"yaad"}],"question":"___ ich ein Kind war, lebte ich in Lahore.","options":["Wenn","Als","Weil"],"answer":1},{"id":"A22-3","level":"A2.2","number":3,"title":"Relative Clauses","grammar":"der / die / das as relative pronouns","explanation":"Relative clause noun ke baare mein mazeed maloomat deti hai. Verb end par aata hai.","example":"Das ist der Mann, der hier arbeitet.","translation":"Yeh woh aadmi hai jo yahan kaam karta hai.","vocab":[{"de":"der Nachbar","ur":"padosi"},{"de":"die Person","ur":"shakhs"},{"de":"das Gebäude","ur":"imarat"},{"de":"die Geschichte","ur":"kahani"},{"de":"kennen","ur":"jaanna"},{"de":"erklären","ur":"samjhana"},{"de":"beschreiben","ur":"bayan karna"},{"de":"besonders","ur":"khaas"}],"question":"Das ist die Frau, ___ hier wohnt.","options":["der","die","das"],"answer":1},{"id":"A22-4","level":"A2.2","number":4,"title":"Learning & Education","grammar":"Infinitive with zu","explanation":"Kuch expressions ke baad zu + infinitive use hota hai: Es ist wichtig, Deutsch zu lernen.","example":"Ich versuche, jeden Tag zu üben.","translation":"Main har roz practice karne ki koshish karta hoon.","vocab":[{"de":"die Prüfung","ur":"imtihan"},{"de":"bestehen","ur":"pass hona"},{"de":"die Note","ur":"grade"},{"de":"der Kurs","ur":"course"},{"de":"die Aufgabe","ur":"task"},{"de":"wiederholen","ur":"dobara karna"},{"de":"verbessern","ur":"behtar karna"},{"de":"die Fähigkeit","ur":"skill"}],"question":"Es ist gut, jeden Tag ___ lernen.","options":["zu","um","für"],"answer":0},{"id":"A22-5","level":"A2.2","number":5,"title":"Media & Technology","grammar":"Indirect questions with ob","explanation":"Indirect yes/no sawal mein ob aata hai aur verb clause ke end par hota hai.","example":"Ich weiß nicht, ob das Internet funktioniert.","translation":"Mujhe nahi pata internet kaam karta hai ya nahi.","vocab":[{"de":"das Internet","ur":"internet"},{"de":"die Nachricht","ur":"message"},{"de":"die Webseite","ur":"website"},{"de":"herunterladen","ur":"download karna"},{"de":"hochladen","ur":"upload karna"},{"de":"das Passwort","ur":"password"},{"de":"das Gerät","ur":"device"},{"de":"die Datei","ur":"file"}],"question":"Weißt du, ___ er kommt?","options":["weil","ob","dass"],"answer":1},{"id":"A22-6","level":"A2.2","number":6,"title":"Environment","grammar":"Passive: werden + participle","explanation":"Passive mein kaam par focus hota hai: Das Papier wird recycelt.","example":"Der Müll wird getrennt.","translation":"Kachra alag alag kiya jata hai.","vocab":[{"de":"die Umwelt","ur":"mahol"},{"de":"der Müll","ur":"kachra"},{"de":"recyceln","ur":"recycle karna"},{"de":"sparen","ur":"bachana"},{"de":"die Energie","ur":"energy"},{"de":"die Natur","ur":"qudrat"},{"de":"sauber","ur":"saaf"},{"de":"verschmutzt","ur":"aalooda"}],"question":"Das Wasser ___ gespart.","options":["werden","wird","wirst"],"answer":1},{"id":"A22-7","level":"A2.2","number":7,"title":"Living in Germany","grammar":"Prepositions with dative","explanation":"Mit, nach, bei, seit, von, zu hamesha dative lete hain.","example":"Ich fahre mit dem Bus.","translation":"Main bus se jata hoon.","vocab":[{"de":"das Amt","ur":"sarkari daftar"},{"de":"die Anmeldung","ur":"registration"},{"de":"der Vertrag","ur":"contract"},{"de":"die Versicherung","ur":"insurance"},{"de":"die Miete","ur":"rent"},{"de":"der Ausweis","ur":"ID card"},{"de":"das Formular","ur":"form"},{"de":"die Behörde","ur":"authority"}],"question":"Ich fahre mit ___ Zug.","options":["den","dem","der"],"answer":1},{"id":"A22-8","level":"A2.2","number":8,"title":"Storytelling","grammar":"Präteritum of sein / haben","explanation":"Written aur spoken stories mein war, hatte common hain.","example":"Gestern war ich müde und hatte wenig Zeit.","translation":"Kal main thaka hua tha aur mere paas kam waqt tha.","vocab":[{"de":"war","ur":"tha"},{"de":"hatte","ur":"tha/paas tha"},{"de":"wurde","ur":"ban gaya"},{"de":"danach","ur":"uske baad"},{"de":"zuerst","ur":"sab se pehle"},{"de":"plötzlich","ur":"achanak"},{"de":"schließlich","ur":"aakhir mein"},{"de":"das Erlebnis","ur":"tajurba"}],"question":"Früher ___ ich viel Zeit.","options":["habe","hatte","bin"],"answer":1},{"id":"B1-1","level":"B1","number":1,"title":"Expressing Opinions","grammar":"dass clauses","explanation":"Dass clause mein conjugated verb end par jata hai. Apni rai ko detail mein bayan karo.","example":"Ich denke, dass Deutsch wichtig ist.","translation":"Mera khayal hai ke German zaroori hai.","vocab":[{"de":"meiner Meinung nach","ur":"meri rai mein"},{"de":"glauben","ur":"yaqeen karna"},{"de":"behaupten","ur":"dawa karna"},{"de":"zustimmen","ur":"ittefaq karna"},{"de":"ablehnen","ur":"rad karna"},{"de":"überzeugen","ur":"qail karna"},{"de":"der Vorteil","ur":"faida"},{"de":"der Nachteil","ur":"nuqsan"}],"question":"Ich glaube, dass er Recht ___.","options":["hat","haben","hast"],"answer":0},{"id":"B1-2","level":"B1","number":2,"title":"Workplace Communication","grammar":"Formal email structure","explanation":"Formal email mein Sehr geehrte... se shuru karo, aur Mit freundlichen Grüßen se khatam karo.","example":"Ich möchte einen Termin vereinbaren.","translation":"Main appointment tay karna chahta hoon.","vocab":[{"de":"die Anfrage","ur":"inquiry"},{"de":"die Rückmeldung","ur":"jawab"},{"de":"die Frist","ur":"deadline"},{"de":"vereinbaren","ur":"tay karna"},{"de":"verschieben","ur":"aage karna"},{"de":"bestätigen","ur":"confirm karna"},{"de":"absagen","ur":"cancel karna"},{"de":"die Unterlagen","ur":"documents"}],"question":"Which is a formal email closing?","options":["Hallo!","Mit freundlichen Grüßen","Bis später"],"answer":1},{"id":"B1-3","level":"B1","number":3,"title":"Arguments & Reasons","grammar":"obwohl clauses","explanation":"Obwohl contrast dikhata hai: halaanke. Is clause ka verb end par jata hai.","example":"Obwohl es regnet, gehe ich spazieren.","translation":"Halaanke barish hai, main walk par jata hoon.","vocab":[{"de":"obwohl","ur":"halaanke"},{"de":"trotzdem","ur":"phir bhi"},{"de":"dennoch","ur":"is ke bawajood"},{"de":"jedoch","ur":"lekin"},{"de":"außerdem","ur":"is ke ilawa"},{"de":"daher","ur":"is liye"},{"de":"der Grund","ur":"wajah"},{"de":"das Argument","ur":"daleel"}],"question":"___ ich müde bin, lerne ich.","options":["Weil","Obwohl","Dass"],"answer":1},{"id":"B1-4","level":"B1","number":4,"title":"Making Hypotheses","grammar":"Konjunktiv II: hätte / wäre","explanation":"Ghair-haqeeqi situations ke liye hätte aur wäre use hota hai.","example":"Wenn ich mehr Zeit hätte, würde ich reisen.","translation":"Agar mere paas zyada waqt hota to main safar karta.","vocab":[{"de":"die Möglichkeit","ur":"imkaan"},{"de":"die Bedingung","ur":"shart"},{"de":"der Traum","ur":"khwab"},{"de":"wünschen","ur":"khwahish karna"},{"de":"hätte","ur":"hota/paas hota"},{"de":"wäre","ur":"hota"},{"de":"annehmen","ur":"farz karna"},{"de":"die Entscheidung","ur":"faisla"}],"question":"Wenn ich reich ___, würde ich reisen.","options":["bin","wäre","war"],"answer":1},{"id":"B1-5","level":"B1","number":5,"title":"News & Reports","grammar":"Passive in present and past","explanation":"News reports mein passive kaafi use hota hai: wurde gebaut = banaya gaya.","example":"Die Brücke wurde letztes Jahr gebaut.","translation":"Pul pichle saal banaya gaya.","vocab":[{"de":"die Meldung","ur":"khabar"},{"de":"berichten","ur":"report karna"},{"de":"veröffentlichen","ur":"publish karna"},{"de":"die Quelle","ur":"source"},{"de":"die Entwicklung","ur":"taraqqi"},{"de":"die Ursache","ur":"sabab"},{"de":"die Folge","ur":"nateeja"},{"de":"der Bericht","ur":"report"}],"question":"Die Straße ___ repariert.","options":["wurde","hatte","war"],"answer":0},{"id":"B1-6","level":"B1","number":6,"title":"Society & Culture","grammar":"Genitive basics","explanation":"Genitive ownership dikhata hai: die Meinung des Lehrers.","example":"Das ist das Auto meines Bruders.","translation":"Yeh mere bhai ki car hai.","vocab":[{"de":"die Gesellschaft","ur":"muashra"},{"de":"die Kultur","ur":"saqafat"},{"de":"die Tradition","ur":"riwayat"},{"de":"die Vielfalt","ur":"tanawwu"},{"de":"die Mehrheit","ur":"aksariyat"},{"de":"die Minderheit","ur":"aqalliyat"},{"de":"die Regel","ur":"qanoon"},{"de":"die Gewohnheit","ur":"aadat"}],"question":"Das Auto ___ Mannes ist neu.","options":["dem","des","den"],"answer":1},{"id":"B1-7","level":"B1","number":7,"title":"Solving Problems","grammar":"Infinitive um ... zu","explanation":"Maqsad batane ke liye um ... zu use hota hai jab dono clauses ka subject same ho.","example":"Ich lerne, um die Prüfung zu bestehen.","translation":"Main imtihan pass karne ke liye parhta hoon.","vocab":[{"de":"lösen","ur":"hal karna"},{"de":"vermeiden","ur":"bachna"},{"de":"das Problem","ur":"masla"},{"de":"der Vorschlag","ur":"tajweez"},{"de":"die Lösung","ur":"hal"},{"de":"die Ursache","ur":"sabab"},{"de":"die Chance","ur":"mauqa"},{"de":"erreichen","ur":"hasil karna"}],"question":"Ich spare Geld, ___ ein Auto zu kaufen.","options":["weil","um","dass"],"answer":1},{"id":"B1-8","level":"B1","number":8,"title":"B1 Exam Workshop","grammar":"Structured speaking answers","explanation":"B1 speaking mein rai, wajah, misaal aur natija do. Pehle apna point saaf batao, phir detail do.","example":"Meiner Meinung nach ist Sport wichtig, weil er gesund ist.","translation":"Meri rai mein sport zaroori hai kyunke sehat ke liye acha hai.","vocab":[{"de":"zunächst","ur":"sab se pehle"},{"de":"beispielsweise","ur":"misal ke taur par"},{"de":"zusammenfassend","ur":"khulasa"},{"de":"im Vergleich","ur":"muqablay mein"},{"de":"empfehlen","ur":"mashwara dena"},{"de":"begründen","ur":"wajah dena"},{"de":"die Erfahrung","ur":"tajurba"},{"de":"das Ergebnis","ur":"nateeja"}],"question":"Which phrase introduces an example?","options":["Beispielsweise","Trotzdem","Deshalb"],"answer":0},{"id":"B2-1","level":"B2","number":1,"title":"Advanced Arguments","grammar":"Complex connectors","explanation":"Einerseits ... andererseits do mukhtalif pehlu dikhata hai. Dennoch aur folglich bhi advanced linking words hain.","example":"Einerseits ist es teuer, andererseits spart es Zeit.","translation":"Aik taraf mehnga hai, doosri taraf waqt bachata hai.","vocab":[{"de":"einerseits","ur":"aik taraf"},{"de":"andererseits","ur":"doosri taraf"},{"de":"folglich","ur":"natijatan"},{"de":"hingegen","ur":"jabke"},{"de":"allerdings","ur":"albata"},{"de":"infolgedessen","ur":"natijatan"},{"de":"somit","ur":"is tarah"},{"de":"demzufolge","ur":"is ke mutabiq"}],"question":"___ ist es praktisch, andererseits teuer.","options":["Einerseits","Weil","Ob"],"answer":0},{"id":"B2-2","level":"B2","number":2,"title":"Nominalisation","grammar":"Turning verbs into nouns","explanation":"Formal German mein actions ko nouns bana kar concise style use hota hai: entscheiden -> die Entscheidung.","example":"Die Entscheidung war schwierig.","translation":"Faisla mushkil tha.","vocab":[{"de":"die Entscheidung","ur":"faisla"},{"de":"die Entwicklung","ur":"taraqqi"},{"de":"die Veränderung","ur":"tabdeeli"},{"de":"die Verbesserung","ur":"behtari"},{"de":"die Untersuchung","ur":"tehqeeq"},{"de":"die Umsetzung","ur":"amal daramad"},{"de":"die Bewertung","ur":"jaiza"},{"de":"die Unterstützung","ur":"madad"}],"question":"Which is the noun of entscheiden?","options":["entschieden","die Entscheidung","entscheidet"],"answer":1},{"id":"B2-3","level":"B2","number":3,"title":"Passive Alternatives","grammar":"sich lassen / sein + zu","explanation":"Formal text mein passive ke ilawa lässt sich aur ist ... zu use hota hai.","example":"Das Problem lässt sich lösen.","translation":"Yeh masla hal kiya ja sakta hai.","vocab":[{"de":"umsetzbar","ur":"qabil-e-amal"},{"de":"vermeidbar","ur":"bachne ke qabil"},{"de":"machbar","ur":"mumkin"},{"de":"erforderlich","ur":"zaroori"},{"de":"zulässig","ur":"jaiz"},{"de":"die Maßnahme","ur":"iqdam"},{"de":"die Vorschrift","ur":"rule"},{"de":"die Lösung","ur":"hal"}],"question":"Das lässt ___ erklären.","options":["dich","sich","mich"],"answer":1},{"id":"B2-4","level":"B2","number":4,"title":"Academic Reading","grammar":"Recognising author stance","explanation":"Advanced reading mein writer ki rai, evidence aur counterargument ko alag pehchano.","example":"Die Studie deutet darauf hin, dass Bewegung hilft.","translation":"Study is taraf ishara karti hai ke exercise madad karti hai.","vocab":[{"de":"die Studie","ur":"study"},{"de":"die Forschung","ur":"research"},{"de":"der Beleg","ur":"saboot"},{"de":"die These","ur":"daawa"},{"de":"die Analyse","ur":"tajziya"},{"de":"die Aussage","ur":"bayan"},{"de":"die Schlussfolgerung","ur":"natija"},{"de":"die Perspektive","ur":"nuqta-e-nazar"}],"question":"Which word means evidence?","options":["der Beleg","die These","die Studie"],"answer":0},{"id":"B2-5","level":"B2","number":5,"title":"Formal Complaints","grammar":"Formal register and requests","explanation":"Formal complaint mein masla, tareekh, asar aur expected solution clear likho.","example":"Ich bitte Sie um eine zeitnahe Rückmeldung.","translation":"Main aapse jald jawab ki darkhwast karta hoon.","vocab":[{"de":"die Beschwerde","ur":"shikayat"},{"de":"der Mangel","ur":"kami"},{"de":"die Erstattung","ur":"refund"},{"de":"die Lieferung","ur":"delivery"},{"de":"die Verzögerung","ur":"taakhir"},{"de":"die Forderung","ur":"mutalba"},{"de":"die Rechnung","ur":"bill"},{"de":"die Kundschaft","ur":"customers"}],"question":"Which is a formal request?","options":["Gib mir Geld!","Ich bitte um Rückmeldung.","Hey, antwort!"],"answer":1},{"id":"B2-6","level":"B2","number":6,"title":"Debating Solutions","grammar":"Participle adjectives","explanation":"Partizip I ongoing action dikhata hai: die steigenden Preise. Partizip II completed result: die geschlossene Tür.","example":"Die steigenden Kosten sind ein Problem.","translation":"Barhti hui costs aik masla hain.","vocab":[{"de":"steigend","ur":"barhta hua"},{"de":"fallend","ur":"girta hua"},{"de":"wachsend","ur":"barhta hua"},{"de":"betroffen","ur":"mutasir"},{"de":"überzeugend","ur":"qail karne wala"},{"de":"umfassend","ur":"mukammal"},{"de":"nachhaltig","ur":"paidaar"},{"de":"dringend","ur":"fori"}],"question":"Die ___ Preise belasten Familien.","options":["steigende","steigen","gestiegen"],"answer":0},{"id":"B2-7","level":"B2","number":7,"title":"Presentations & Discussions","grammar":"Structuring a presentation","explanation":"B2 presentation mein introduction, 2-3 arguments, examples, counterargument aur conclusion rakho.","example":"Abschließend möchte ich die wichtigsten Punkte zusammenfassen.","translation":"Aakhir mein main aham points ka khulasa karna chahta hoon.","vocab":[{"de":"einleitend","ur":"shuru mein"},{"de":"anschließend","ur":"uske baad"},{"de":"hervorheben","ur":"numayan karna"},{"de":"erläutern","ur":"wazahat karna"},{"de":"veranschaulichen","ur":"misal se samjhana"},{"de":"abschließend","ur":"aakhir mein"},{"de":"die Gliederung","ur":"structure"},{"de":"der Standpunkt","ur":"mauqif"}],"question":"Which word introduces a conclusion?","options":["Einleitend","Abschließend","Anschließend"],"answer":1},{"id":"B2-8","level":"B2","number":8,"title":"B2 Exam Workshop","grammar":"Synthesising sources","explanation":"Do sources ko compare karte waqt common points, differences aur apni rai evidence ke saath do.","example":"Während Quelle A Vorteile betont, weist Quelle B auf Risiken hin.","translation":"Jabke source A faide batata hai, source B risks ki taraf ishara karta hai.","vocab":[{"de":"die Quelle","ur":"source"},{"de":"die Gemeinsamkeit","ur":"mushtarka baat"},{"de":"der Unterschied","ur":"farq"},{"de":"die Auswirkung","ur":"asar"},{"de":"die Behauptung","ur":"daawa"},{"de":"die Gegenposition","ur":"mukhalif rai"},{"de":"abwägen","ur":"tolna"},{"de":"zusammenfassen","ur":"khulasa karna"}],"question":"Which word means “difference”?","options":["die Gemeinsamkeit","der Unterschied","die Quelle"],"answer":1}]};
 
+const GRAMMAR_GUIDE = {
+  "A11-1": {
+    "explanation": "Ich apne liye hai, du ek dost ke liye, ihr kai doston ke liye aur Sie formal singular ya plural ke liye. Formal Sie hamesha capital hota hai. Heißen ke forms hain ich heiße, du heißt, ihr heißt, Sie heißen. Sawal mein sawali lafz ke baad verb aata hai.",
+    "examples": [
+      "Wie heißt du? — Ich heiße Ali.",
+      "Wie heißen Sie? — Ich heiße Frau Weber."
+    ],
+    "prompt": "Wie ___ Sie?",
+    "answer": "heißen",
+    "feedback": "Formal Sie ke saath heißen aata hai."
+  },
+  "A11-2": {
+    "explanation": "Sein irregular hai. Yaad karo ich bin, du bist, er/sie/es ist, wir sind, ihr seid, sie/Sie sind. Statement mein subject ke baad verb aa sakta hai. Yes/no sawal mein verb pehle aata hai.",
+    "examples": [
+      "Wir sind müde.",
+      "Bist du neu hier?"
+    ],
+    "prompt": "Ihr ___ heute hier.",
+    "answer": "seid",
+    "feedback": "Ihr ke saath seid aata hai."
+  },
+  "A11-3": {
+    "explanation": "Umar ke liye sein use karo. Sawal ka pattern Wie alt + sein + subject hai. 21 se units pehle aate hain, jaise einundzwanzig. 16 sechzehn aur 17 siebzehn hain.",
+    "examples": [
+      "Wie alt sind Sie?",
+      "Ich bin einundzwanzig Jahre alt."
+    ],
+    "prompt": "Write 24 in words.",
+    "answer": "vierundzwanzig",
+    "feedback": "Vier + und + zwanzig, sab ek lafz."
+  },
+  "A11-4": {
+    "explanation": "Woher origin poochta hai aur wo location. Kommen ke forms ich komme, du kommst, er kommt, wir kommen hain. Aksar mulk aus ke baad bina article aate hain. Aus der Schweiz mein article lagta hai.",
+    "examples": [
+      "Woher kommt sie? — Sie kommt aus der Schweiz.",
+      "Wo wohnst du? — Ich wohne in Köln."
+    ],
+    "prompt": "Sie kommt ___ Pakistan.",
+    "answer": "aus",
+    "feedback": "Origin ke liye aus use karo."
+  },
+  "A11-5": {
+    "explanation": "Nominative mein der aur das nouns ke saath mein, die aur plural ke saath meine aata hai. Isi pattern par dein/deine aata hai. Possessive form us cheez ya shakhs ke gender par depend karti hai jiska zikr hai.",
+    "examples": [
+      "Das ist mein Bruder.",
+      "Das sind meine Eltern."
+    ],
+    "prompt": "Das ist ___ Schwester. (my)",
+    "answer": "meine",
+    "feedback": "Schwester feminine hai."
+  },
+  "A11-6": {
+    "explanation": "Nominative definite articles mein masculine der, feminine die, neuter das aur plural die hai. Noun capital hota hai. -ung se khatam hone wale nouns aksar feminine hain, jaise die Wohnung. Noun ko article aur plural ke saath seekho.",
+    "examples": [
+      "Das Fenster ist offen.",
+      "Die Bücher sind neu."
+    ],
+    "prompt": "___ Lampe ist hell.",
+    "answer": "Die",
+    "feedback": "Lampe feminine hai."
+  },
+  "A11-7": {
+    "explanation": "Nominative mein ein Tisch, eine Tasche, ein Buch. Indefinite plural ke saath ein ka form nahi hota. Negation mein kein Tisch, keine Tasche, kein Buch aur keine Bücher aata hai.",
+    "examples": [
+      "Das ist kein Stuhl.",
+      "Das sind keine Schlüssel."
+    ],
+    "prompt": "Das ist ___ Uhr. (a clock)",
+    "answer": "eine",
+    "feedback": "Uhr feminine hai."
+  },
+  "A11-8": {
+    "explanation": "Regular verb se -en hatao, phir ich -e, du -st, er/sie/es -t, wir -en, ihr -t, sie/Sie -en lagao. Arbeiten jaisi stem ke saath du arbeitest aur er arbeitet mein extra e aata hai. Main clause mein finite verb doosri position par hota hai.",
+    "examples": [
+      "Heute lernt Mia Deutsch.",
+      "Arbeitet ihr morgen?"
+    ],
+    "prompt": "Du ___ in Berlin. (wohnen)",
+    "answer": "wohnst",
+    "feedback": "Wohn + st."
+  },
+  "A12-1": {
+    "explanation": "Main clause mein verb conjugate hota hai aur separable prefix end par aata hai. Yes/no question mein conjugated part pehle aata hai. Infinitive ek saath likha jata hai, jaise aufstehen.",
+    "examples": [
+      "Mia kauft am Samstag ein.",
+      "Wann rufst du mich an?"
+    ],
+    "prompt": "Ich stehe früh ___. (aufstehen)",
+    "answer": "auf",
+    "feedback": "Auf separable prefix hai aur end par aata hai."
+  },
+  "A12-2": {
+    "explanation": "Exact time ke liye um, din aur tareekh ke liye am, month ya season ke liye im. Von ... bis se duration batate hain. Nachts aur heute jaise lafzon ko yeh prepositions nahi chahiye.",
+    "examples": [
+      "Der Kurs beginnt im April.",
+      "Wir arbeiten von neun bis fünf."
+    ],
+    "prompt": "Der Zug fährt ___ acht Uhr.",
+    "answer": "um",
+    "feedback": "Exact clock time ke saath um."
+  },
+  "A12-3": {
+    "explanation": "Direct object aksar Akkusativ hota hai. Masculine der → den, ein → einen. Feminine die/eine, neuter das/ein aur plural die is comparison mein unchanged hain. Wer? subject aur wen/was? object dhoondne mein madad karte hain.",
+    "examples": [
+      "Die Frau kauft den Käse.",
+      "Ich brauche eine Tasche."
+    ],
+    "prompt": "Ich sehe ___ Hund. (the)",
+    "answer": "den",
+    "feedback": "Hund masculine direct object hai."
+  },
+  "A12-4": {
+    "explanation": "Möchte polite wish batata hai. Ich/er möchte, du möchtest, wir/sie/Sie möchten, ihr möchtet. Noun Akkusativ mein ho sakta hai. Agar doosra verb ho to uska infinitive end par aata hai.",
+    "examples": [
+      "Wir möchten bezahlen.",
+      "Möchten Sie noch einen Kaffee?"
+    ],
+    "prompt": "Ich möchte einen Tee ___. (order)",
+    "answer": "bestellen",
+    "feedback": "Infinitive bestellen clause ke aakhir mein."
+  },
+  "A12-5": {
+    "explanation": "Static location ke liye in jaise two-way preposition ke saath Dativ lagta hai. Dative articles dem (masculine/neuter), der (feminine), den (plural) hain. Plural noun mein aksar -n lagta hai. In dem ka common short form im hai.",
+    "examples": [
+      "Das Buch liegt auf dem Tisch.",
+      "Wir sind im Wohnzimmer."
+    ],
+    "prompt": "Sie ist in ___ Küche. (the)",
+    "answer": "der",
+    "feedback": "Küche feminine hai aur yahaan location hai."
+  },
+  "A12-6": {
+    "explanation": "Formal imperative mein infinitive jaisa verb pehle, phir Sie. Sein exception hai: Seien Sie. Separable prefix end par rakho. Bitte se request polite banti hai.",
+    "examples": [
+      "Warten Sie bitte hier.",
+      "Steigen Sie am Bahnhof aus."
+    ],
+    "prompt": "___ Sie bitte hier. (bleiben)",
+    "answer": "Bleiben",
+    "feedback": "Formal command mein verb + Sie."
+  },
+  "A12-7": {
+    "explanation": "Können ability ya possibility ke liye hai. Ich/er kann, du kannst, wir/sie/Sie können, ihr könnt. Doosra verb infinitive ki shakal mein end par aata hai. Yes/no question mein modal pehle aata hai.",
+    "examples": [
+      "Wir können morgen kommen.",
+      "Kannst du mir helfen?"
+    ],
+    "prompt": "Er ___ gut schwimmen.",
+    "answer": "kann",
+    "feedback": "Er ke saath kann."
+  },
+  "A12-8": {
+    "explanation": "Perfekt mein haben conjugate hota hai aur Partizip II end par aata hai. Regular pattern ge- + stem + -t hai. -ieren verbs mein ge- nahi, jaise studiert. Irregular verbs saath yaad karo, jaise gelesen.",
+    "examples": [
+      "Ich habe gestern gearbeitet.",
+      "Hast du das Buch gelesen?"
+    ],
+    "prompt": "Wir haben Deutsch ___. (lernen)",
+    "answer": "gelernt",
+    "feedback": "Ge + lern + t."
+  },
+  "A21-1": {
+    "explanation": "Perfekt mein sein kai intransitive movement ya state-change verbs ke saath aata hai, jaise fahren, ankommen, einschlafen. Bleiben aur sein bhi sein lete hain. Helper conjugate hota hai, participle end par.",
+    "examples": [
+      "Der Zug ist angekommen.",
+      "Wir sind zu Hause geblieben."
+    ],
+    "prompt": "Ich ___ spät eingeschlafen.",
+    "answer": "bin",
+    "feedback": "Einschlafen state change hai, ich bin."
+  },
+  "A21-2": {
+    "explanation": "Weil reason deta hai. Comma lagao aur finite verb weil clause ke end par rakho. Agar weil clause pehle ho to main clause ka finite verb comma ke baad pehle aata hai.",
+    "examples": [
+      "Ich bleibe zu Hause, weil ich krank bin.",
+      "Weil ich krank bin, bleibe ich zu Hause."
+    ],
+    "prompt": "weil er heute arbeiten ___ (müssen)",
+    "answer": "muss",
+    "feedback": "Finite modal muss subordinate clause ke end par."
+  },
+  "A21-3": {
+    "explanation": "Comparative aksar -er + als leta hai. Equal comparison so ... wie hai. Standalone superlative am ...-sten hai. Exceptions gut → besser → am besten aur viel → mehr → am meisten yaad karo.",
+    "examples": [
+      "Der Bus ist schneller als das Fahrrad.",
+      "Mia läuft am schnellsten."
+    ],
+    "prompt": "Der Zug ist schneller ___ der Bus.",
+    "answer": "als",
+    "feedback": "Unequal comparison ke liye als."
+  },
+  "A21-4": {
+    "explanation": "Article ke baad adjective ki ending gender, case aur article par depend karti hai. Nominative ein schwarzer Mantel, eine schwarze Jacke, ein schwarzes Hemd. Masculine accusative einen schwarzen Mantel. Definite article ke saath der schwarze Mantel aur den schwarzen Mantel.",
+    "examples": [
+      "Ich kaufe einen schwarzen Mantel.",
+      "Sie trägt ein grünes Hemd."
+    ],
+    "prompt": "Ich suche eine ___ Jacke. (blau)",
+    "answer": "blaue",
+    "feedback": "Feminine accusative eine + adjective-e."
+  },
+  "A21-5": {
+    "explanation": "Müssen obligation hai, dürfen permission. Nicht dürfen ka matlab mana hai. Nicht müssen ka matlab zaroori nahi. Modal finite position leta hai aur infinitive end par aata hai.",
+    "examples": [
+      "Du darfst hier nicht parken.",
+      "Du musst heute nicht arbeiten."
+    ],
+    "prompt": "Visitors are allowed to enter. Besucher ___ eintreten.",
+    "answer": "dürfen",
+    "feedback": "Permission ke liye dürfen."
+  },
+  "A21-6": {
+    "explanation": "Futur I mein werden conjugate karo aur infinitive end par rakho. Ich werde, du wirst, er wird, wir werden, ihr werdet, sie/Sie werden. Fixed future plans ke liye time expression ke saath present bhi natural hai.",
+    "examples": [
+      "Wir werden nächste Woche umziehen.",
+      "Morgen fahre ich nach Köln."
+    ],
+    "prompt": "Du ___ morgen anrufen.",
+    "answer": "wirst",
+    "feedback": "Du ke saath wirst."
+  },
+  "A21-7": {
+    "explanation": "An, auf, hinter, in, neben, über, unter, vor, zwischen two-way hain. Spatial destination (wohin?) ke liye Akkusativ aur location (wo?) ke liye Dativ. Movement existing location ke andar ho sakti hai, jaise im Park laufen.",
+    "examples": [
+      "Ich lege das Buch auf den Tisch.",
+      "Das Buch liegt auf dem Tisch."
+    ],
+    "prompt": "Ich stelle den Stuhl neben ___ Tür. (the)",
+    "answer": "die",
+    "feedback": "Nayi position destination hai, feminine accusative die."
+  },
+  "A21-8": {
+    "explanation": "Accusative reflexives sind mich, dich, sich, uns, euch, sich. Agar direct object bhi ho to kuch patterns mein reflexive dative hota hai, jaise ich wasche mir die Hände. Verb ko reflexive pronoun ke saath seekho.",
+    "examples": [
+      "Er fühlt sich besser.",
+      "Ich wasche mir die Hände."
+    ],
+    "prompt": "Fühlst du ___ besser?",
+    "answer": "dich",
+    "feedback": "Du ka accusative reflexive dich."
+  },
+  "A22-1": {
+    "explanation": "Würde + infinitive hypothetical action ya soft request banata hai. Ich/er würde, du würdest, wir/Sie würden, ihr würdet. Polite question mein würden pehle aur infinitive end par aata hai. Können ke liye könnten bhi natural hai.",
+    "examples": [
+      "Ich würde gern länger bleiben.",
+      "Könnten Sie das bitte wiederholen?"
+    ],
+    "prompt": "___ Sie mir bitte helfen? (werden)",
+    "answer": "Würden",
+    "feedback": "Formal Sie ke saath würden."
+  },
+  "A22-2": {
+    "explanation": "Als ek past event ya period ke liye hai. Wenn repeated past situations, present/future time aur conditions ke liye. Dono subordinate clauses mein finite verb end par aata hai.",
+    "examples": [
+      "Als ich ankam, war es dunkel.",
+      "Wenn es morgen regnet, bleibe ich zu Hause."
+    ],
+    "prompt": "___ ich gestern nach Hause kam, war es spät.",
+    "answer": "Als",
+    "feedback": "Gestern ek specific past event hai."
+  },
+  "A22-3": {
+    "explanation": "Relative pronoun ka gender/number antecedent se aata hai aur case relative clause mein uske role se. Masculine der subject, den direct object, dem dative hai. Relative clause comma se alag hota hai aur finite verb end par.",
+    "examples": [
+      "Das ist der Mann, den ich kenne.",
+      "Das ist die Frau, die dort wohnt."
+    ],
+    "prompt": "Das ist der Mann, ___ ich geholfen habe.",
+    "answer": "dem",
+    "feedback": "Helfen Dativ leta hai."
+  },
+  "A22-4": {
+    "explanation": "Versuchen, planen aur hoffen jaise verbs ke baad zu-infinitive aa sakta hai. Separable verb mein zu prefix aur stem ke beech aata hai, jaise aufzustehen. Modal ke baad plain infinitive hota hai.",
+    "examples": [
+      "Ich plane, früher aufzustehen.",
+      "Ich kann früher aufstehen."
+    ],
+    "prompt": "Ich versuche, dich morgen ___. (anrufen)",
+    "answer": "anzurufen",
+    "feedback": "An + zu + rufen ek lafz."
+  },
+  "A22-5": {
+    "explanation": "Indirect yes/no sawal ob se shuru hota hai. Information question mein relevant W-word rehta hai. Dono mein finite verb end par. Direct yes/no mein finite verb pehle hota hai.",
+    "examples": [
+      "Weißt du, ob der Laden offen ist?",
+      "Ich frage mich, wann der Kurs beginnt."
+    ],
+    "prompt": "Ich weiß nicht, ___ er kommt. (whether)",
+    "answer": "ob",
+    "feedback": "Yes/no information ke liye ob."
+  },
+  "A22-6": {
+    "explanation": "Vorgangspassiv mein werden + Partizip II action par focus rakhta hai. Active Akkusativ object passive subject ban sakta hai. Agent zaroori ho to von + Dativ use karo. Sein + Partizip II state dikha sakta hai.",
+    "examples": [
+      "Die Tür wird geöffnet.",
+      "Die Tür ist geöffnet."
+    ],
+    "prompt": "Die Fenster ___ gereinigt. (werden)",
+    "answer": "werden",
+    "feedback": "Plural Fenster ke saath werden."
+  },
+  "A22-7": {
+    "explanation": "Aus, bei, mit, nach, seit, von aur zu Dativ lete hain. Dativ forms dem/der/dem/den hain. Common contractions zum, zur aur beim hain. Seit ongoing situation ke liye present ke saath aa sakta hai.",
+    "examples": [
+      "Ich gehe zur Arbeit.",
+      "Seit einem Jahr wohne ich hier."
+    ],
+    "prompt": "Wir fahren mit ___ Zug. (the)",
+    "answer": "dem",
+    "feedback": "Mit Dativ leta hai aur Zug masculine hai."
+  },
+  "A22-8": {
+    "explanation": "Sein aur haben ka Präteritum conversation mein bhi common hai. Sein: war, warst, war, waren, wart, waren. Haben: hatte, hattest, hatte, hatten, hattet, hatten. Story background ke liye dono useful hain.",
+    "examples": [
+      "Wir waren gestern müde.",
+      "Hattest du gestern Zeit?"
+    ],
+    "prompt": "Ihr ___ gestern zu Hause. (sein)",
+    "answer": "wart",
+    "feedback": "Ihr ke saath wart."
+  },
+  "B1-1": {
+    "explanation": "Dass statement, opinion ya reported content link karta hai. Comma aur finite verb end par. Compound tense mein participle ke baad auxiliary aata hai. Dass conjunction hai, das article ya pronoun ho sakta hai.",
+    "examples": [
+      "Ich hoffe, dass er morgen kommt.",
+      "Sie sagt, dass sie das Buch gelesen hat."
+    ],
+    "prompt": "Ich glaube, dass er gestern angekommen ___. (sein)",
+    "answer": "ist",
+    "feedback": "Perfekt auxiliary ist subordinate clause ke end par."
+  },
+  "B1-2": {
+    "explanation": "Formal email mein clear subject, greeting, reason, concrete request aur closing do. Anrede ke baad comma aur agla lafz lowercase, siwaye noun ya Sie jaisa capital word. Mit freundlichen Grüßen ke baad comma nahi.",
+    "examples": [
+      "Sehr geehrte Frau Weber, könnten Sie mir einen Termin anbieten?",
+      "Vielen Dank für Ihre Rückmeldung."
+    ],
+    "prompt": "Ich danke ___ für Ihre Hilfe. (formal)",
+    "answer": "Ihnen",
+    "feedback": "Danken Dativ leta hai, formal form Ihnen."
+  },
+  "B1-3": {
+    "explanation": "Obwohl concessive subordinate clause banata hai: expectation ke bawajood action. Finite verb end par. Trotzdem main clause connector hai aur position 1 par ho to finite verb ke foran baad subject aata hai.",
+    "examples": [
+      "Obwohl es regnet, gehen wir raus.",
+      "Es regnet. Trotzdem gehen wir raus."
+    ],
+    "prompt": "Obwohl der Bus teurer ___, nehme ich ihn. (sein)",
+    "answer": "ist",
+    "feedback": "Finite verb ist obwohl clause ke end par."
+  },
+  "B1-4": {
+    "explanation": "Hätte aur wäre hypothetical haben aur sein hain. Wenn clause mein finite form aakhir mein. Main clause mein würde + infinitive use kar sakte ho. Present hypothetical aur past hypothetical alag hain: hätte Zeit vs hätte Zeit gehabt.",
+    "examples": [
+      "Wenn ich mehr Geld hätte, würde ich umziehen.",
+      "Wenn ich du wäre, würde ich nachfragen."
+    ],
+    "prompt": "Wenn ich jetzt frei ___, käme ich mit. (sein)",
+    "answer": "wäre",
+    "feedback": "Imagined present state ke liye wäre."
+  },
+  "B1-5": {
+    "explanation": "Process passive present wird/werden + participle aur Präteritum wurde/wurden + participle. Perfekt passive mein ist/sind + participle + worden hota hai. Tense auxiliary se pata chalta hai.",
+    "examples": [
+      "Die Brücke wird gerade renoviert.",
+      "Die Brücke ist renoviert worden."
+    ],
+    "prompt": "Die Häuser ___ 1990 gebaut. (werden, past)",
+    "answer": "wurden",
+    "feedback": "Past passive aur plural subject ke liye wurden."
+  },
+  "B1-6": {
+    "explanation": "Genitive possession/relationship batata hai. Definite articles des, der, des, der hain. Masculine/neuter noun aksar -s ya -es leta hai, jaise des Hauses. Feminine noun aam tor par extra ending nahi leta.",
+    "examples": [
+      "Die Tür des Hauses ist offen.",
+      "Das ist der Arbeitsplatz meiner Schwester."
+    ],
+    "prompt": "Die Farbe ___ Autos gefällt mir. (the)",
+    "answer": "des",
+    "feedback": "Auto neuter hai, genitive des Autos."
+  },
+  "B1-7": {
+    "explanation": "Um ... zu purpose batata hai jab understood subject main clause ke subject ke saath same ho. Comma compulsory hai. Different subject ke liye damit clause use karo. Separable zu form beech mein lagta hai.",
+    "examples": [
+      "Ich spare, um mir ein Fahrrad zu kaufen.",
+      "Ich spreche leiser, damit das Kind schlafen kann."
+    ],
+    "prompt": "Ich lerne, ___ den Test zu bestehen.",
+    "answer": "um",
+    "feedback": "Same subject ke purpose ke liye um ... zu."
+  },
+  "B1-8": {
+    "explanation": "Speaking answer mein stance, reason, example aur short conclusion do. Meiner Meinung nach position 1 le to finite verb foran aata hai. Weil mein verb end par, denn ke baad normal main-clause order.",
+    "examples": [
+      "Meiner Meinung nach sollte es mehr Radwege geben.",
+      "Ein Beispiel dafür ist der Schulweg."
+    ],
+    "prompt": "Meiner Meinung nach ___ Sport wichtig. (sein)",
+    "answer": "ist",
+    "feedback": "Intro phrase position 1 aur finite verb position 2."
+  },
+  "B2-1": {
+    "explanation": "Einerseits ... andererseits do perspectives balance karta hai. Dono main clauses mein finite verb position 2. Während subordinate clause mein finite verb end par hota hai. Dennoch main clause ki position 1 le sakta hai.",
+    "examples": [
+      "Einerseits sinken die Kosten, andererseits steigt der Aufwand.",
+      "Während die Kosten sinken, steigt der Aufwand."
+    ],
+    "prompt": "Die Lösung ist teuer. Dennoch ___ sie sich. (lohnen)",
+    "answer": "lohnt",
+    "feedback": "Dennoch position 1, lohnt position 2."
+  },
+  "B2-2": {
+    "explanation": "Verb ko noun bana kar action par focus karte hain. Infinitive nominalization usually neuter hoti hai, jaise das Lesen. Derived nouns ka gender ending par depend kar sakta hai, jaise die Entscheidung. Actor von ya genitive se bataya ja sakta hai.",
+    "examples": [
+      "Die Stadt baut die Brücke um. Der Umbau der Brücke dauert ein Jahr.",
+      "Beim Lesen mache ich Notizen."
+    ],
+    "prompt": "___ Lesen stört mich Lärm. (bei + dem)",
+    "answer": "Beim",
+    "feedback": "Bei dem → beim, Lesen noun ke taur par capital."
+  },
+  "B2-3": {
+    "explanation": "Sich lassen + infinitive possibility dikhata hai. Sein + zu + infinitive context ke mutabiq possibility ya requirement ho sakta hai. Nicht zu unterschätzen mein requirement ka sense hai.",
+    "examples": [
+      "Die Datei lässt sich öffnen.",
+      "Der Antrag ist bis Freitag einzureichen."
+    ],
+    "prompt": "Das Gerät lässt sich leicht ___. (reparieren)",
+    "answer": "reparieren",
+    "feedback": "Sich lassen ke baad plain infinitive."
+  },
+  "B2-4": {
+    "explanation": "Claims mein certainty dekho: belegt strongly supports, deutet darauf hin signals evidence but uncertainty, könnte possibility. Reported claims ke liye Konjunktiv I source se distance dikhata hai. Author ki stance aur quoted stance alag track karo.",
+    "examples": [
+      "Die Autorin hält die Maßnahme für sinnvoll.",
+      "Laut dem Bericht könnte die Nachfrage steigen."
+    ],
+    "prompt": "Which is more tentative: belegt or könnte?",
+    "answer": "könnte",
+    "feedback": "Könnte possibility dikhata hai."
+  },
+  "B2-5": {
+    "explanation": "Complaint ko facts, impact, request aur deadline mein arrange karo. Ich bitte Sie um + Akkusativ aur Ich wäre Ihnen dankbar, wenn ... formal patterns hain. Specific request likho aur context ke mutabiq register rakho.",
+    "examples": [
+      "Am 12. Mai wurde mir der falsche Artikel geliefert.",
+      "Ich wäre Ihnen dankbar, wenn Sie den Betrag bis Freitag erstatten könnten."
+    ],
+    "prompt": "Ich bitte Sie ___ eine schriftliche Bestätigung.",
+    "answer": "um",
+    "feedback": "Bitten um + Akkusativ."
+  },
+  "B2-6": {
+    "explanation": "Partizip I usually ongoing active meaning deta hai: steigen → steigend. Partizip II often completed/passive reading deta hai: lösen → gelöst. Dono attributive adjectives noun se pehle appropriate ending lete hain.",
+    "examples": [
+      "Die steigenden Kosten belasten die Stadt.",
+      "Die bereits beschlossenen Maßnahmen greifen ab Mai."
+    ],
+    "prompt": "Die Firma ersetzt das beschädigt___ Gerät. (write the ending only)",
+    "answer": "e",
+    "feedback": "Definite article ke baad neuter accusative adjective -e."
+  },
+  "B2-7": {
+    "explanation": "Presentation mein question define karo, agenda do, points connect karo aur conclusion do. Zunächst, anschließend aur abschließend jab position 1 mein hon to finite verb foran baad. Beim Wechsel explicit reference do, jaise Daraus ergibt sich die Frage ...",
+    "examples": [
+      "Zunächst erläutere ich die Ausgangslage.",
+      "Abschließend gehe ich auf Ihre Fragen ein."
+    ],
+    "prompt": "Anschließend ___ ich auf die Kosten eingehen. (möchten)",
+    "answer": "möchte",
+    "feedback": "Intro adverb ke baad conjugated verb."
+  },
+  "B2-8": {
+    "explanation": "Synthesis mein sources ko common question par compare karo, claim source se attribute karo aur evidence ki limit batao. Während contrast dikhata hai aur uske clause ka finite verb end par hota hai. Beide ... jedoch agreement aur difference mark kar sakta hai.",
+    "examples": [
+      "Quelle A betont den Nutzen, während Quelle B auf Kosten hinweist.",
+      "Beide Texte befürworten einen Versuch, bewerten die Risiken jedoch unterschiedlich."
+    ],
+    "prompt": "Während Quelle A Vorteile betont, ___ Quelle B Risiken. (nennen)",
+    "answer": "nennt",
+    "feedback": "Initial subordinate clause position 1 hai, main verb comma ke baad aata hai."
+  }
+};
+const GRAMMAR_REFERENCE = [
+  [
+    "Sentence structure",
+    "Main statement mein conjugated verb position 2 leta hai. Ek poora phrase position 1 ho sakta hai. Yes/no sawal mein verb position 1 aur W-question mein sawali phrase ke baad aata hai. Modal aur Perfekt mein second verb component end par hota hai.",
+    "Am Montag lerne ich Deutsch. · Lernst du Deutsch? · Wann hast du gelernt?"
+  ],
+  [
+    "The four cases",
+    "Nominativ subject ke liye, Akkusativ aksar direct object, Dativ aksar receiver aur Genitiv possession ke liye. Verb ya preposition case decide kar sakta hai. Helfen Dativ leta hai, fragen Akkusativ.",
+    "Der Mann gibt dem Kind den Ball. · Das ist der Ball des Kindes."
+  ],
+  [
+    "Definite articles by case",
+    "Order masculine, feminine, neuter, plural. Nominativ: der, die, das, die. Akkusativ: den, die, das, die. Dativ: dem, der, dem, den. Genitiv: des, der, des, der. Dativ plural noun aksar -n leta hai aur masculine/neuter Genitiv noun aksar -s/-es.",
+    "mit den Kindern · die Tür des Hauses"
+  ],
+  [
+    "Indefinite and possessive articles",
+    "Ein-word endings order masculine, feminine, neuter, plural: Nominativ —, -e, —, -e. Akkusativ -en, -e, —, -e. Dativ -em, -er, -em, -en. Genitiv -es, -er, -es, -er. Bare ein ka plural nahi. Kein aur possessives plural mein bhi use ho sakte hain.",
+    "ein Freund · einen Freund · mit einem Freund · mit meinen Freunden"
+  ],
+  [
+    "Personal pronouns",
+    "Nominativ: ich, du, er/sie/es, wir, ihr, sie/Sie. Akkusativ: mich, dich, ihn/sie/es, uns, euch, sie/Sie. Dativ: mir, dir, ihm/ihr/ihm, uns, euch, ihnen/Ihnen. Noun ki jagah pronoun use karo aur uska case verb se check karo.",
+    "Ich sehe ihn. · Ich helfe ihm. · Können Sie mir helfen?"
+  ],
+  [
+    "Negation",
+    "Kein un nouns ko negate karta hai jin ke saath ein ya zero article hota. Nicht verb, adjective, definite noun phrase ya specific phrase ko negate kar sakta hai. Specific phrase negate karna ho to nicht us se pehle rakho.",
+    "Ich habe kein Auto. · Ich komme heute nicht. · Ich fahre nicht nach Berlin, sondern nach Bonn."
+  ],
+  [
+    "Prepositions and case",
+    "Akkusativ: durch, für, gegen, ohne, um. Dativ: aus, bei, mit, nach, seit, von, zu. Formal written German mein trotz, während aur wegen aam tor par Genitiv lete hain. Two-way prepositions ke saath location Dativ aur spatial destination Akkusativ.",
+    "für meinen Bruder · mit meiner Schwester · wegen des Wetters · im Park / in den Park"
+  ],
+  [
+    "Adjective endings",
+    "Order masculine, feminine, neuter, plural. After definite article Nom -e/-e/-e/-en, Acc -en/-e/-e/-en, Dat and Gen all -en. After ein-word Nom -er/-e/-es/-en, Acc -en/-e/-es/-en, Dat and Gen all -en. Without article Nom -er/-e/-es/-e, Acc -en/-e/-es/-e, Dat -em/-er/-em/-en, Gen -en/-er/-en/-er. Adjective after sein takes no ending.",
+    "der kalte Tee · ein kalter Tee · kalter Tee · Der Tee ist kalt."
+  ],
+  [
+    "Connectors and word order",
+    "Und, aber, denn, oder, sondern normal main-clause order rakhte hain. Deshalb, trotzdem aur danach position 1 le sakte hain, phir conjugated verb. Weil, dass, obwohl, wenn aur ob ke clauses mein conjugated verb end par.",
+    "Ich bleibe zu Hause, denn ich bin krank. · Ich bin krank. Deshalb bleibe ich zu Hause. · Ich bleibe zu Hause, weil ich krank bin."
+  ],
+  [
+    "German tense overview",
+    "Präsens current action aur scheduled future ke liye. Perfekt spoken past mein aam hai. Präteritum written narration aur sein, haben, modals ke saath common hai. Plusquamperfekt past event se bhi pehle ka event batata hai: hatte/war + participle. Futur I werden + infinitive hai. Futur II werden + participle + haben/sein hai.",
+    "Ich lerne. · Ich habe gelernt. · Ich lernte. · Ich hatte gelernt. · Ich werde lernen. · Bis Freitag werde ich gelernt haben."
+  ],
+  [
+    "Modal verbs",
+    "Können ability, müssen necessity, dürfen permission, sollen expectation ya instruction, wollen intention, mögen liking. Möchten polite desire hai. Modal conjugate karo aur doosra verb infinitive mein end par rakho.",
+    "Du sollst den Arzt anrufen. · Wir wollen morgen fahren. · Hier darf man nicht rauchen."
+  ],
+  [
+    "Passive and alternatives",
+    "Vorgangspassiv action: werden + participle. Zustandspassiv state: sein + participle. Past action: wurde + participle ya ist + participle + worden. Sich lassen + infinitive possibility dikhata hai.",
+    "Der Laden wird geöffnet. · Der Laden ist geöffnet. · Der Laden wurde geöffnet. · Die Tür lässt sich öffnen."
+  ],
+  [
+    "Subjunctive and reported speech",
+    "Konjunktiv II imagined situations aur polite requests ke liye. Present: wäre, hätte, könnte ya würde + infinitive. Past hypothetical: hätte/wäre + Partizip II. Konjunktiv I formal reported speech mein common hai, jaise er sei, sie habe.",
+    "Wenn ich Zeit hätte, käme ich mit. · Wenn ich Zeit gehabt hätte, wäre ich mitgekommen. · Sie sagt, sie sei müde."
+  ],
+  [
+    "Relative pronouns",
+    "Antecedent se gender aur number lo. Relative clause ke andar role se case lo. Order masculine, feminine, neuter, plural. Nom der/die/das/die, Acc den/die/das/die, Dat dem/der/dem/denen, Gen dessen/deren/dessen/deren. Verb end par rakho.",
+    "Das ist der Kollege, dem ich geholfen habe. · Das ist die Frau, deren Auto kaputt ist."
+  ]
+];
 </script><script>
 'use strict';
 const $=s=>document.querySelector(s), esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const levels=COURSE.levels,lessons=COURSE.lessons;const key='deutschpath-academy-v3';let state={done:{},mistakes:{},activity:{},notes:{},goal:2,lang:'ur'};try{let old=JSON.parse(localStorage.getItem(key));if(old&&typeof old==='object')state={...state,...old}}catch(e){};let page='dashboard',currentLevel='A1.1',currentLesson=lessons[0].id,tab='learn',choice=-1,submitted=false,search='',reviewFilter='all';
-function save(){localStorage.setItem(key,JSON.stringify(state))}function today(){return new Date().toLocaleDateString('en-CA')}function record(){state.activity[today()]=(state.activity[today()]||0)+1;save()}function doneCount(){return Object.values(state.done).filter(Boolean).length}function streak(){let n=0,d=new Date();if(!state.activity[d.toLocaleDateString('en-CA')])d.setDate(d.getDate()-1);for(let i=0;i<365;i++){let k=d.toLocaleDateString('en-CA');if(!state.activity[k])break;n++;d.setDate(d.getDate()-1)}return n}function say(t){if(!('speechSynthesis'in window)){alert('Speech is not supported in this browser.');return}speechSynthesis.cancel();let u=new SpeechSynthesisUtterance(t);u.lang='de-DE';u.rate=.85;speechSynthesis.speak(u)}function pct(n,d){return Math.round(100*n/Math.max(1,d))}function levelDone(l){return lessons.filter(x=>x.level===l&&state.done[x.id]).length}function levelLessons(l){return lessons.filter(x=>x.level===l)}function nav(){let items=[['dashboard','⌂','Dashboard'],['courses','▦','All Courses'],['vocabulary','◇','Vocabulary Practice'],['grammar','✍','Grammar Practice'],['mistakes','↻','Mistake Review'],['listening','♫','Listening Practice'],['conversation','☏','Speaking Practice'],['writing','▤','Writing Practice'],['settings','⚙','Settings & Backup']];$('#nav').innerHTML=items.map(([p,i,t])=>`<button class="nav ${page===p?'active':''}" data-page="${p}"><span class="symbol">${i}</span>${t}</button>`).join('');$('#levelnav').innerHTML=levels.map(l=>`<button class="nav ${page==='level'&&currentLevel===l.id?'active':''}" data-level="${l.id}"><span class="symbol">📘</span>${l.id} · ${esc(l.name)}</button>`).join('')}
+function save(){localStorage.setItem(key,JSON.stringify(state))}function today(){return new Date().toLocaleDateString('en-CA')}function record(){state.activity[today()]=(state.activity[today()]||0)+1;save()}function doneCount(){return Object.values(state.done).filter(Boolean).length}function streak(){let n=0,d=new Date();if(!state.activity[d.toLocaleDateString('en-CA')])d.setDate(d.getDate()-1);for(let i=0;i<365;i++){let k=d.toLocaleDateString('en-CA');if(!state.activity[k])break;n++;d.setDate(d.getDate()-1)}return n}function say(t){if(!('speechSynthesis'in window)){alert('Speech is not supported in this browser.');return}speechSynthesis.cancel();let u=new SpeechSynthesisUtterance(t);u.lang='de-DE';u.rate=.85;speechSynthesis.speak(u)}function pct(n,d){return Math.round(100*n/Math.max(1,d))}function levelDone(l){return lessons.filter(x=>x.level===l&&state.done[x.id]).length}function levelLessons(l){return lessons.filter(x=>x.level===l)}function nav(){let items=[['dashboard','⌂','Dashboard'],['courses','▦','All Courses'],['vocabulary','◇','Vocabulary Practice'],['grammarReference','§','Grammar Reference'],['grammar','✍','Grammar Practice'],['mistakes','↻','Mistake Review'],['listening','♫','Listening Practice'],['conversation','☏','Speaking Practice'],['writing','▤','Writing Practice'],['settings','⚙','Settings & Backup']];$('#nav').innerHTML=items.map(([p,i,t])=>`<button class="nav ${page===p?'active':''}" data-page="${p}"><span class="symbol">${i}</span>${t}</button>`).join('');$('#levelnav').innerHTML=levels.map(l=>`<button class="nav ${page==='level'&&currentLevel===l.id?'active':''}" data-level="${l.id}"><span class="symbol">📘</span>${l.id} · ${esc(l.name)}</button>`).join('')}
 function renderPageHeader(title){return `<div class="top"><span class="eyebrow">${esc(title)}</span><span class="chip">🇩🇪 German · Roman Urdu / English</span></div>`}function stat(v,t){return `<div class="stat"><strong>${v}</strong><small>${t}</small></div>`}function card(l){let n=levelDone(l.id);return `<article class="card"><span class="pill">LEVEL ${l.id}</span><h3>${esc(l.name)}</h3><p>${esc(l.desc)}</p><div class="progress"><span style="width:${pct(n,8)}%"></span></div><div class="flex"><small class="subtle">${n} of 8 lessons</small><strong>${pct(n,8)}%</strong></div><p><button class="btn secondary" data-level="${l.id}">Explore Course →</button></p></article>`}function dashboard(){let next=lessons.find(x=>!state.done[x.id])||lessons[0];return renderPageHeader('My Learning Dashboard')+`<section class="hero"><div><small>YOUR GERMAN ACADEMY</small><h1>Hallo! Build real German skills, one lesson at a time. 👋</h1><p>Learn grammar in Roman Urdu, practise German vocabulary, listening, speaking, writing and reading. Track your progress from A1.1 to B2.</p><button class="btn light" data-lesson="${next.id}">Continue Learning →</button></div><div class="hero-art">📚</div></section><div class="stats">${stat(doneCount()+'/'+lessons.length,'Completed Lessons')}${stat(pct(doneCount(),lessons.length)+'%','Course Progress')}${stat(streak()+' 🔥','Day Streak')}${stat(state.activity[today()]||0,'Activities Today')}</div><section class="section"><div class="section-head"><h2>Choose Your Level</h2><button class="btn ghost" data-page="courses">All Lessons →</button></div><div class="cards">${levels.map(card).join('')}</div></section><section class="section"><div class="notice"><strong>Your learning plan:</strong> Complete 1–2 lessons daily. Read the grammar explanation, listen to examples, practise vocabulary, take the quiz, and write your own sentences. This is a growing original curriculum, not a certified B2 qualification.</div></section>`}
 function courseList(){return renderPageHeader('All Courses')+`<h1>German Learning Path</h1><p class="subtle">48 structured starter units across six levels. Select a course to begin.</p><div class="cards">${levels.map(card).join('')}</div>`}function row(x){return `<div class="lessonrow"><div class="num">${state.done[x.id]?'✓':String(x.number).padStart(2,'0')}</div><div style="flex:1"><h3>${esc(x.title)}</h3><p>${esc(x.grammar)} · Vocabulary · Reading · Listening · Writing · Quiz</p></div><button class="btn secondary" data-lesson="${x.id}">${state.done[x.id]?'Review':'Study'} →</button></div>`}function levelPage(){let l=levels.find(x=>x.id===currentLevel);return renderPageHeader('Courses / '+l.id)+`<button class="btn ghost" data-page="courses">← All Courses</button><section class="section"><span class="pill">LEVEL ${l.id}</span><h1>${esc(l.name)}</h1><p class="subtle">${esc(l.desc)}</p><div class="progress"><span style="width:${pct(levelDone(l.id),8)}%"></span></div><p class="subtle">${levelDone(l.id)} / 8 units completed</p><div class="lessonlist">${levelLessons(l.id).map(row).join('')}</div></section>`}
-function current(){return lessons.find(x=>x.id===currentLesson)||lessons[0]}function tabs(){return `<div class="tabbar">${[['learn','Learn'],['vocab','Vocabulary'],['reading','Reading'],['listening','Listening'],['writing','Writing & Speaking'],['quiz','Knowledge Check']].map(([t,n])=>`<button class="tab ${tab===t?'active':''}" data-tab="${t}">${n}</button>`).join('')}</div>`}function wordGrid(x){return `<div class="wordgrid">${x.vocab.map(w=>`<div class="word"><div><strong>${esc(w.de)}</strong><small>${esc(w.ur)}</small></div><button class="speak" data-say="${esc(w.de)}" aria-label="Hear German word">🔊</button></div>`).join('')}</div>`}function readingText(x){let s=x.example+' '+x.example.replace(/[.!?]$/,'')+'.';return `<div class="panel"><h3>Reading Comprehension</h3><p class="reading" lang="de">${esc(x.example)} ${esc(x.example)}</p><button class="btn secondary" data-say="${esc(x.example)}">🔊 Read Aloud</button><p class="subtle">Roman Urdu meaning: ${esc(x.translation)}</p><p><strong>Reading task:</strong> German sentence ko 2 martaba parho. Subject aur main verb identify karo. Phir sentence ka matlab apne alfaaz mein batao.</p><p class="tiny">Tip: Apni notebook mein naye alfaaz aur unke articles likho.</p></div>`}function listeningText(x){return `<div class="panel"><h3>Listening Lab 🎧</h3><p class="subtle">Play German audio and try to write what you hear before revealing the answer.</p><button class="btn" data-say="${esc(x.example)}">▶ Play German Audio</button><textarea class="textinput" id="listenNote" placeholder="Type what you hear in German..."></textarea><button class="btn secondary" id="revealAudio">Reveal Transcript</button><div id="audioAnswer" class="example" hidden><strong>${esc(x.example)}</strong><small>${esc(x.translation)}</small></div><p class="tiny">Audio uses your browser's German text-to-speech voice; availability depends on device/browser.</p></div>`}function writingText(x){return `<div class="panel"><h3>Writing Workshop ✍</h3><p class="prompt"><strong>Task:</strong> ${esc(x.grammar)} use karke German mein 3 apne jumlay likho. Pehla jumla apne baare mein, doosra apni family/kaam ke baare mein aur teesra aik sawal ho. Example: <em>${esc(x.example)}</em></p><textarea id="writingText" class="textinput" placeholder="Write your German sentences here...">${esc(state.notes[x.id]||'')}</textarea><button class="btn" id="saveWriting">Save Writing</button><p class="tiny">Writing is saved locally. Automatic AI correction is not available yet; compare with the examples and grammar rule.</p><h3>Speaking Challenge 🎙</h3><p class="subtle">Example ko suno, phir buland awaaz mein 3 martaba repeat karo. Apne jumlay German mein bolo.</p><button class="btn secondary" data-say="${esc(x.example)}">🔊 Hear Model Sentence</button></div>`}function quizText(x){return `<div class="panel"><h3>Knowledge Check</h3><p class="subtle">Choose the correct answer. Ghalat jawab Mistake Review mein save ho jayega.</p><h3>${esc(x.question)}</h3><div class="quizopts">${x.options.map((o,i)=>`<button class="option ${choice===i?'selected':''}" data-choice="${i}">${String.fromCharCode(65+i)}. ${esc(o)}</button>`).join('')}</div><button class="btn" id="checkAnswer" ${choice<0||submitted?'disabled':''}>Check Answer</button>${submitted?`<div class="feedback ${choice===x.answer?'good':'bad'}"><strong>${choice===x.answer?'Correct! ✓':'Not quite. Keep practising.'}</strong><p>Correct answer: <strong>${esc(x.options[x.answer])}</strong></p><p>${esc(x.explanation)}</p></div><button class="btn secondary" id="retry">Try Again</button>`:''}</div>`}function lessonPage(){let x=current();let content=tab==='learn'?`<div class="grid2"><div class="stack"><div class="panel"><h3>Grammar · ${esc(x.grammar)}</h3><div class="explain">${esc(x.explanation)}</div><div class="example"><small>GERMAN EXAMPLE</small><strong lang="de">${esc(x.example)}</strong><button class="speak" data-say="${esc(x.example)}">🔊 Listen</button><p><small>ROMAN URDU MEANING</small><br>${esc(x.translation)}</p></div></div><div class="panel"><h3>Learning Steps</h3><p class="subtle">1. Grammar samjho → 2. Vocabulary suno → 3. Reading aur listening karo → 4. German likho aur bolo → 5. Quiz complete karo.</p></div></div><div class="panel"><h3>Today's Vocabulary</h3>${wordGrid(x)}</div></div>`:tab==='vocab'?`<div class="panel"><h3>Vocabulary · ${esc(x.title)}</h3><p class="subtle">Har German lafz ko audio ke saath repeat karo. Article ke saath yaad karo.</p>${wordGrid(x)}</div>`:tab==='reading'?readingText(x):tab==='listening'?listeningText(x):tab==='writing'?writingText(x):quizText(x);let ix=lessons.findIndex(z=>z.id===x.id),next=lessons[ix+1];return renderPageHeader(`${x.level} / Unit ${x.number}`)+`<button class="btn ghost" data-level="${x.level}">← Back to Course</button><section class="section"><span class="pill">${x.level} · UNIT ${x.number} / 8</span><h1>${esc(x.title)}</h1><p class="subtle">Grammar: ${esc(x.grammar)} · Reading · Listening · Writing · Speaking · Quiz</p>${tabs()}${content}<div class="section flex"><button class="btn secondary" id="markDone">${state.done[x.id]?'✓ Completed':'Mark Unit Complete ✓'}</button>${next?`<button class="btn" data-lesson="${next.id}">Next Unit →</button>`:''}</div></section>`}
+function current(){return lessons.find(x=>x.id===currentLesson)||lessons[0]}function tabs(){return `<div class="tabbar">${[['learn','Learn'],['vocab','Vocabulary'],['reading','Reading'],['listening','Listening'],['writing','Writing & Speaking'],['quiz','Knowledge Check']].map(([t,n])=>`<button class="tab ${tab===t?'active':''}" data-tab="${t}">${n}</button>`).join('')}</div>`}function wordGrid(x){return `<div class="wordgrid">${x.vocab.map(w=>`<div class="word"><div><strong>${esc(w.de)}</strong><small>${esc(w.ur)}</small></div><button class="speak" data-say="${esc(w.de)}" aria-label="Hear German word">🔊</button></div>`).join('')}</div>`}function readingText(lesson) {
+  const guide = GRAMMAR_GUIDE[lesson.id];
+  return `<div class="panel">
+    <h3>Guided Reading</h3>
+    <p class="subtle">Read each example. Find the word or phrase that illustrates the grammar rule. Say what each example means before checking the notes.</p>
+    ${guide.examples.map(example => `<p class="reading" lang="de">${esc(example)}</p>
+      <button class="btn secondary" data-say="${esc(example)}">🔊 Read Aloud</button>`).join('')}
+    <details class="example"><summary>Show grammar notes</summary><p>${esc(guide.explanation)}</p></details>
+  </div>`;
+}function listeningText(x){const transcript=GRAMMAR_GUIDE[x.id].examples.at(-1);return `<div class="panel"><h3>Listening Lab 🎧</h3><p class="subtle">Play German audio and try to write what you hear before revealing the answer.</p><button class="btn" data-say="${esc(transcript)}">▶ Play German Audio</button><textarea class="textinput" id="listenNote" placeholder="Type what you hear in German..."></textarea><button class="btn secondary" id="revealAudio">Reveal Transcript</button><div id="audioAnswer" class="example" hidden><strong>${esc(transcript)}</strong></div><p class="tiny">Audio uses your browser's German text-to-speech voice; availability depends on device/browser.</p></div>`}function writingText(x){return `<div class="panel"><h3>Writing Workshop ✍</h3><p class="prompt"><strong>Task:</strong> Write two original German examples that use ${esc(x.grammar)}. Change the subject or situation in the second example. Model: <em>${esc(x.example)}</em></p><textarea id="writingText" class="textinput" placeholder="Write your German sentences here...">${esc(state.notes[x.id]||'')}</textarea><button class="btn" id="saveWriting">Save Writing</button><p class="tiny">Writing is saved locally. Automatic AI correction is not available yet; compare with the examples and grammar rule.</p><h3>Speaking Challenge 🎙</h3><p class="subtle">Listen to the example and repeat it aloud three times. Then say your own sentences in German.</p><button class="btn secondary" data-say="${esc(x.example)}">🔊 Hear Model Sentence</button></div>`}function quizText(x){return `<div class="panel"><h3>Knowledge Check</h3><p class="subtle">Choose the correct answer. Incorrect answers are saved in Mistake Review.</p><h3>${esc(x.question)}</h3><div class="quizopts">${x.options.map((o,i)=>`<button class="option ${choice===i?'selected':''}" data-choice="${i}">${String.fromCharCode(65+i)}. ${esc(o)}</button>`).join('')}</div><button class="btn" id="checkAnswer" ${choice<0||submitted?'disabled':''}>Check Answer</button>${submitted?`<div class="feedback ${choice===x.answer?'good':'bad'}"><strong>${choice===x.answer?'Correct! ✓':'Not quite. Keep practising.'}</strong><p>Correct answer: <strong>${esc(x.options[x.answer])}</strong></p><p>${esc(x.explanation)}</p></div><button class="btn secondary" id="retry">Try Again</button>`:''}</div>`}function grammarReference() {
+  return renderPageHeader('Grammar Reference') + `<h1>German Grammar Reference</h1>
+    <p class="subtle">Look up a rule, then open a unit to practise it in context.</p>
+    <div class="stack">${GRAMMAR_REFERENCE.map(([title, explanation, examples]) => `
+      <details class="panel">
+        <summary><strong>${esc(title)}</strong></summary>
+        <p>${esc(explanation)}</p>
+        <p lang="de">${esc(examples)}</p>
+      </details>`).join('')}
+    </div>`;
+}
+
+function learnContent(lesson) {
+  const guide = GRAMMAR_GUIDE[lesson.id];
+  return `<div class="grid2">
+    <div class="stack">
+      <div class="panel">
+        <h3>Grammar · ${esc(lesson.grammar)}</h3>
+        <p class="explain">${esc(guide.explanation)}</p>
+        <div class="example">
+          <strong lang="de">${esc(lesson.example)}</strong>
+          <p>${esc(lesson.translation)}</p>
+          <button class="speak" data-say="${esc(lesson.example)}">🔊 Listen</button>
+        </div>
+        <h3>More Examples</h3>
+        ${guide.examples.map(example => `<div class="example">
+          <p lang="de">${esc(example)}</p>
+          <button class="speak" data-say="${esc(example)}">🔊 Listen</button>
+        </div>`).join('')}
+      </div>
+      <form class="panel" id="grammarExercise">
+        <h3>Apply the Rule</h3>
+        <label for="grammarAnswer">${esc(guide.prompt)}</label>
+        <input id="grammarAnswer" class="search" type="text" autocomplete="off" required>
+        <button class="btn" type="submit">Check Answer</button>
+        <p id="grammarFeedback" role="status"></p>
+      </form>
+    </div>
+    <div class="panel"><h3>Today's Vocabulary</h3>${wordGrid(lesson)}</div>
+  </div>`;
+}
+
+document.addEventListener('submit', event => {
+  if (event.target.id !== 'grammarExercise') return;
+  event.preventDefault();
+  const guide = GRAMMAR_GUIDE[current().id];
+  const answer = $('#grammarAnswer').value.trim().normalize('NFC');
+  const correct = answer === guide.answer;
+  const feedback = $('#grammarFeedback');
+  feedback.className = 'feedback ' + (correct ? 'good' : 'bad');
+  feedback.textContent = (correct ? 'Correct. ' : 'Expected: ' + guide.answer + '. ') + guide.feedback;
+});
+function lessonPage(){let x=current();let content=tab==='learn'?learnContent(x):tab==='vocab'?`<div class="panel"><h3>Vocabulary · ${esc(x.title)}</h3><p class="subtle">Listen and repeat each German word. Learn nouns together with their articles.</p>${wordGrid(x)}</div>`:tab==='reading'?readingText(x):tab==='listening'?listeningText(x):tab==='writing'?writingText(x):quizText(x);let ix=lessons.findIndex(z=>z.id===x.id),next=lessons[ix+1];return renderPageHeader(`${x.level} / Unit ${x.number}`)+`<button class="btn ghost" data-level="${x.level}">← Back to Course</button><section class="section"><span class="pill">${x.level} · UNIT ${x.number} / 8</span><h1>${esc(x.title)}</h1><p class="subtle">Grammar: ${esc(x.grammar)} · Reading · Listening · Writing · Speaking · Quiz</p>${tabs()}${content}<div class="section flex"><button class="btn secondary" id="markDone">${state.done[x.id]?'✓ Completed':'Mark Unit Complete ✓'}</button>${next?`<button class="btn" data-lesson="${next.id}">Next Unit →</button>`:''}</div></section>`}
 function genericPractice(type){let subset=type==='mistakes'?lessons.filter(x=>state.mistakes[x.id]):lessons;let title={grammar:'Grammar Practice',vocabulary:'Vocabulary Practice',mistakes:'Mistake Review',listening:'Listening Practice',conversation:'Speaking Practice',writing:'Writing Practice'}[type];return renderPageHeader(title)+`<h1>${title}</h1><p class="subtle">Choose a lesson below to practise ${type==='mistakes'?'your previous incorrect answers':type==='grammar'?'grammar quizzes':type==='vocabulary'?'German words':type==='listening'?'German listening':type==='conversation'?'spoken German':'German writing'}.</p><div class="filters">${levels.map(l=>`<button class="filter ${reviewFilter===l.id?'active':''}" data-filter="${l.id}">${l.id}</button>`).join('')}<button class="filter ${reviewFilter==='all'?'active':''}" data-filter="all">All Levels</button></div><input class="search" id="search" placeholder="Search lessons or grammar topics..." value="${esc(search)}"><div class="lessonlist" id="filteredLessons">${filteredRows(subset)}</div>`}function filteredRows(subset){let arr=subset.filter(x=>(reviewFilter==='all'||x.level===reviewFilter)&&(`${x.title} ${x.grammar} ${x.level}`).toLowerCase().includes(search.toLowerCase()));return arr.length?arr.map(x=>row(x)).join(''):'<div class="panel empty">No lessons found. Try another level or search.</div>'}
 function settings(){return renderPageHeader('Settings & Backup')+`<h1>Learning Settings</h1><div class="stack"><div class="panel"><h3>Daily Goal</h3><p class="subtle">Roz kitni learning activities complete karna chahte ho?</p><select id="goal"><option value="1" ${state.goal===1?'selected':''}>1 activity</option><option value="2" ${state.goal===2?'selected':''}>2 activities</option><option value="3" ${state.goal===3?'selected':''}>3 activities</option><option value="5" ${state.goal===5?'selected':''}>5 activities</option></select><p>${state.activity[today()]||0} / ${state.goal} activities today</p></div><div class="panel"><h3>Backup Your Progress</h3><p class="subtle">Export a JSON backup to move progress between phone and laptop. Cloud login/sync is not yet available.</p><button class="btn" id="export">Download Backup</button> <label class="btn secondary" for="import" style="display:inline-block;cursor:pointer">Import Backup</label><input type="file" id="import" accept=".json,application/json" hidden></div><div class="notice"><strong>Free and private:</strong> No accounts, API keys, subscriptions or payments are required. All learning progress is saved in this browser. Clear browser data = lose progress unless backed up.</div></div>`}
-function render(){nav();let output=page==='dashboard'?dashboard():page==='courses'?courseList():page==='level'?levelPage():page==='lesson'?lessonPage():page==='settings'?settings():genericPractice(page);$('#app').innerHTML=output;document.title='DeutschPath Academy | '+page;window.scrollTo({top:0,behavior:'instant'})}function go(p){page=p;reviewFilter='all';search='';closeMenu();render()}function closeMenu(){$('#side').classList.remove('open');$('#overlay').classList.remove('open')}
+function render(){nav();let output=page==='dashboard'?dashboard():page==='courses'?courseList():page==='level'?levelPage():page==='lesson'?lessonPage():page==='settings'?settings():page==='grammarReference'?grammarReference():genericPractice(page);$('#app').innerHTML=output;document.title='DeutschPath Academy | '+page;window.scrollTo({top:0,behavior:'instant'})}function go(p){page=p;reviewFilter='all';search='';closeMenu();render()}function closeMenu(){$('#side').classList.remove('open');$('#overlay').classList.remove('open')}
 $('#menuBtn').onclick=()=>{$('#side').classList.toggle('open');$('#overlay').classList.toggle('open')};$('#overlay').onclick=closeMenu;
 document.addEventListener('click',e=>{let b=e.target.closest('[data-page],[data-level],[data-lesson],[data-tab],[data-choice],[data-say],[data-filter],#checkAnswer,#retry,#markDone,#revealAudio,#saveWriting,#export');if(!b)return;if(b.dataset.page){go(b.dataset.page);return}if(b.dataset.level){currentLevel=b.dataset.level;page='level';closeMenu();render();return}if(b.dataset.lesson){let previousPage=page;currentLesson=b.dataset.lesson;page='lesson';tab=previousPage==='grammar'||previousPage==='mistakes'?'quiz':previousPage==='vocabulary'?'vocab':previousPage==='listening'?'listening':previousPage==='conversation'||previousPage==='writing'?'writing':'learn';choice=-1;submitted=false;closeMenu();render();return}if(b.dataset.tab){tab=b.dataset.tab;choice=-1;submitted=false;render();return}if(b.dataset.say){say(b.dataset.say);return}if(b.dataset.choice!==undefined){if(submitted)return;choice=Number(b.dataset.choice);$('#app').querySelectorAll('.option').forEach((el,i)=>el.classList.toggle('selected',i===choice));$('#checkAnswer').disabled=false;return}if(b.dataset.filter){reviewFilter=b.dataset.filter;render();return}if(b.id==='checkAnswer'){let x=current();if(choice<0)return;submitted=true;if(choice!==x.answer)state.mistakes[x.id]=(state.mistakes[x.id]||0)+1;else delete state.mistakes[x.id];record();render();return}if(b.id==='retry'){choice=-1;submitted=false;render();return}if(b.id==='markDone'){state.done[currentLesson]=true;record();render();return}if(b.id==='revealAudio'){$('#audioAnswer').hidden=false;return}if(b.id==='saveWriting'){state.notes[currentLesson]=$('#writingText').value;record();alert('Writing saved on this device.');return}if(b.id==='export'){let blob=new Blob([JSON.stringify(state,null,2)],{type:'application/json'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='deutschpath-backup.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000)}});
 document.addEventListener('input',e=>{if(e.target.id==='search'){search=e.target.value;let subset=page==='mistakes'?lessons.filter(x=>state.mistakes[x.id]):lessons;$('#filteredLessons').innerHTML=filteredRows(subset)}});document.addEventListener('change',async e=>{if(e.target.id==='goal'){state.goal=Number(e.target.value);save();render()}if(e.target.id==='import'){let f=e.target.files?.[0];if(!f)return;try{let obj=JSON.parse(await f.text());if(!obj||typeof obj!=='object'||!obj.done||!obj.activity)throw Error('Invalid backup');if(confirm('Replace current progress with this backup?')){state={...state,...obj};save();go('dashboard')}}catch(err){alert('This does not look like a valid DeutschPath backup.')}}});render();
